@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/netxilia/code/!svn/ver/417/trunk/jax-rs-html/src/main/java/org/netxilia/jaxrs/html
+END
+ValidationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/289/trunk/jax-rs-html/src/main/java/org/netxilia/jaxrs/html/ValidationException.java
+END
+ModelAndView.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/289/trunk/jax-rs-html/src/main/java/org/netxilia/jaxrs/html/ModelAndView.java
+END
+HTMLProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/417/trunk/jax-rs-html/src/main/java/org/netxilia/jaxrs/html/HTMLProvider.java
+END
+IHTMLProviderInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/289/trunk/jax-rs-html/src/main/java/org/netxilia/jaxrs/html/IHTMLProviderInterceptor.java
+END
+IModelHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/netxilia/code/!svn/ver/289/trunk/jax-rs-html/src/main/java/org/netxilia/jaxrs/html/IModelHandler.java
+END

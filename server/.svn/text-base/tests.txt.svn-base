@@ -1,0 +1,73 @@
+these are teste to be automatized:
+values
+1. set value in a cell
+2. set a formula in cell refering to the same sheet
+3. set a formula in cell from summary refering to the main sheet
+4. long test - watch row resize
+
+scrolling:
+1. scroll main -> scroll summary
+2. resize a column in main -> resize in summary
+
+css
+1. bold / italic
+2. left align numbers
+3. borders
+4. background / foreground
+5. font size
+
+tree view
+
+add & remove rows & colls
+1. add column
+2. remove column
+3. add row
+4. remove row
+5. set auto-insert row
+6. remove auto-insert row
+
+pages
+
+merge
+
+copy & paste
+
+formatters
+
+editors
+
+filters
+1. in place by value(f7)
+2. in place by formula (ctrl + f7)
+
+mai deschis #ebddd4 - select
+f. deschis #ababd3 - normal 
+deschis: #8d8ec5 - 
+inchis: #333399 - 
+f. inschis: #2f2e84
+selectie (roz): #ebddd4
+
+//readme
+extensible
+REST
+non-intrusive database
+import/export excel
+flash charts
+export pdf
+simple user and permission management
+folder organization
+
+formulas modify D15: 150ms save, 30ms send event
+
+de reparat:
+1. add/remove column/row
+4. scroll horiz - si cu charts + merged cells
+
+OK
+2. view page (find, filter)
+3. aliases
+5. tree view
+6. charts
+7. scroll la move cu sageti (aproape ok - nu merge bine orizontal)
+8. resize column / sync column size
+9. overview page

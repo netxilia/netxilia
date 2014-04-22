@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/netxilia/code/!svn/ver/417/trunk/api-impl/src/main/java/org/netxilia/api/impl/event
+END
+DispatchableEventDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/netxilia/code/!svn/ver/371/trunk/api-impl/src/main/java/org/netxilia/api/impl/event/DispatchableEventDispatcher.java
+END
+DispatchableEventSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/417/trunk/api-impl/src/main/java/org/netxilia/api/impl/event/DispatchableEventSupport.java
+END
+DispatchableEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/371/trunk/api-impl/src/main/java/org/netxilia/api/impl/event/DispatchableEvent.java
+END
+DirectExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/netxilia/code/!svn/ver/371/trunk/api-impl/src/main/java/org/netxilia/api/impl/event/DirectExecutor.java
+END

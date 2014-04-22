@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<context:annotation-config />
+	<import resource="classpath:functions.xml" />
+	<import resource="classpath:domain-services.xml" />
+
+
+	<bean id="impExcel" class="org.netxilia.impexp.impl.ExcelImportService">
+	</bean>
+
+	<bean id="expExcel" class="org.netxilia.impexp.impl.ExcelExportService">
+	</bean>
+	
+	<bean id="impJson" class="org.netxilia.impexp.impl.JsonImportService">
+	</bean>
+
+	<bean id="expJson" class="org.netxilia.impexp.impl.JsonExportService">
+	</bean>
+
+	<bean id="clientEventConversionService"
+		class="org.netxilia.server.service.event.impl.ClientEventConversionServiceImpl">
+	</bean>
+
+	<!-- the window processor -->
+	<bean id="windowProcessor"
+		class="org.netxilia.server.service.user.impl.WindowProcessorImpl">
+	</bean>
+
+	<bean id="sheetModelService"
+		class="org.netxilia.server.rest.html.sheet.impl.SheetModelServiceImpl">
+		<property name="pageSize" value="200"/>
+		<property name="mainExtraCols" value="20"/>
+		
+	</bean>
+
+	<bean id="workbookModelService"
+		class="org.netxilia.server.rest.html.workbook.impl.WorkbookModelServiceImpl">
+	</bean>
+
+	<bean id="adminModelService"
+		class="org.netxilia.server.rest.html.admin.impl.AdminModelServiceImpl">
+	</bean>
+	
+	<import resource="classpath:netxilia-extension-*.xml" />
+</beans>

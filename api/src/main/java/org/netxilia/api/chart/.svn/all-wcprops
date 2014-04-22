@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/netxilia/code/!svn/ver/404/trunk/api/src/main/java/org/netxilia/api/chart
+END
+Axis.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/chart/Axis.java
+END
+ChartWithData.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/netxilia/code/!svn/ver/404/trunk/api/src/main/java/org/netxilia/api/chart/ChartWithData.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/chart/Element.java
+END
+ElementWithData.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/chart/ElementWithData.java
+END
+Chart.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/netxilia/code/!svn/ver/404/trunk/api/src/main/java/org/netxilia/api/chart/Chart.java
+END
+Title.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/chart/Title.java
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/chart/Type.java
+END

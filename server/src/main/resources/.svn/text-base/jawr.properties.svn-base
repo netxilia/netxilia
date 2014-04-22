@@ -1,0 +1,44 @@
+# Common properties
+jawr.debug.on=false
+jawr.gzip.on=true
+jawr.gzip.ie6.on=false
+jawr.charset.name=UTF-8
+
+# Javascript properties and mappings
+jawr.js.bundle.basedir=/js
+
+jawr.js.bundle.jquery.id=/bundles/jquery.js
+jawr.js.bundle.jquery.mappings=/js/jquery/**
+
+jawr.js.bundle.nx.id=/bundles/nx.js
+jawr.js.bundle.nx.mappings=/js/nx/**
+
+jawr.js.bundle.gen-nx.id=/bundles/gen-nx.js
+jawr.js.bundle.gen-nx.mappings=/generated-js/**
+
+jawr.js.bundle.other.id=/bundles/other.js
+jawr.js.bundle.other.mappings=/js/other/**
+
+# The /bundles/lib.js bundle is global
+# (always imported before other scripts to pages using the taglib)
+#jawr.js.bundle.lib.global=true
+
+
+# CSS properties and mappings
+jawr.css.bundle.basedir=/css
+
+jawr.css.bundle.base.id=/bundles/base.css
+jawr.css.bundle.base.mappings=/css/jquery-ui-1.7.2.custom.css,/css/jquery.treeview.css,/css/nx.css,/css/nx.threeColumn.css
+
+jawr.css.bundle.home.id=/bundles/home.css
+jawr.css.bundle.home.mappings=/css/nx.home.css
+
+jawr.css.bundle.sheet.id=/bundles/sheet.css
+jawr.css.bundle.sheet.mappings=/css/nx.sheet-menu.css,/css/nx.sheet.css
+
+jawr.css.bundle.admin.id=/bundles/admin.css
+jawr.css.bundle.admin.mappings=/css/nx.admin.css
+
+# CSS files will be all bundled together automatically
+#jawr.css.factory.use.singlebundle=true
+#jawr.css.factory.singlebundle.bundlename=/bundles/all.css

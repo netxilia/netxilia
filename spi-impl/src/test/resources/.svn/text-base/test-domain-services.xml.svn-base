@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+
+	<import resource="classpath:test-formatters.xml" />
+
+	<!-- dummy workbook service -->
+	<bean id="storageService"
+		class="org.netxilia.spi.impl.storage.memory.InMemoryWorkbookStorageServiceImpl">
+		<property name="values">
+			<map>
+				<!-- system -->
+				<entry key="SYSTEM/styles!B1" value="date" />
+				<entry key="SYSTEM/styles!C1" value="pattern-type:date;pattern:dd-MM-yyyy" />
+
+				<entry key="SYSTEM/styles!B2" value="time" />
+				<entry key="SYSTEM/styles!C2" value="pattern-type:date;pattern:HH:mm:ss" />
+
+				<entry key="SYSTEM/styles!B3" value="dateTime" />
+				<entry key="SYSTEM/styles!C3" value="pattern-type:date;pattern:dd-MM-yyyy HH:mm:ss" />
+
+				<entry key="SYSTEM/styles!B4" value="short-date" />
+				<entry key="SYSTEM/styles!C4" value="pattern-type:date;pattern:dd-MM-yy" />
+
+				<entry key="SYSTEM/styles!B5" value="short-time" />
+				<entry key="SYSTEM/styles!C5" value="pattern-type:date;pattern:HH:mm" />
+
+				<entry key="SYSTEM/styles!B6" value="short-dateTime" />
+				<entry key="SYSTEM/styles!C6" value="pattern-type:date;pattern:dd-MM-yy HH:mm" />
+
+				<entry key="SYSTEM/styles!B7" value="number" />
+				<entry key="SYSTEM/styles!C7" value="pattern-type:number;pattern:###.##" />
+
+				<entry key="SYSTEM/styles!B8" value="financial" />
+				<entry key="SYSTEM/styles!C8" value="pattern-type:number;pattern:'###.##;(###.##)'" />
+
+				<entry key="SYSTEM/styles!B9" value="boolean" />
+				<entry key="SYSTEM/styles!C9" value="pattern-type:boolean" />
+
+				<entry key="SYSTEM/styles!B10" value="chf" />
+				<entry key="SYSTEM/styles!C10"
+					value="pattern-type:currency;country:CH;text-align:right;" />
+
+				<entry key="SYSTEM/styles!B11" value="eur-rounded" />
+				<entry key="SYSTEM/styles!C11"
+					value="pattern-type:currency;country:EUR;decimals:0;text-align:right;" />
+
+				<entry key="SYSTEM/styles!B12" value="test-enum" />
+				<entry key="SYSTEM/styles!C12"
+					value="pattern-type:enum;enum:org.netxilia.spi.impl.format.MyEnum;enum-value:ordinal" />
+
+				<entry key="SYSTEM/styles!B13" value="test-values" />
+				<entry key="SYSTEM/styles!C13"
+					value="pattern-type:values;workbook:SYSTEM;name-ref:fmt!A1:A3;value-ref:fmt!B1:B3" />
+
+				<!-- real styles -->
+				<entry key="SYSTEM/styles!A14" value="font" />
+
+				<entry key="SYSTEM/styles!B15" value="b" />
+				<entry key="SYSTEM/styles!C15" value="font-weight: bold" />
+
+				<entry key="SYSTEM/styles!B16" value="i" />
+				<entry key="SYSTEM/styles!C16" value="font-style: italic" />
+
+				<entry key="SYSTEM/styles!B17" value="u" />
+				<entry key="SYSTEM/styles!C17" value="text-decoration: underline" />
+
+				<entry key="SYSTEM/styles!B18" value="s" />
+				<entry key="SYSTEM/styles!C18" value="font-weight: line-through" />
+
+				<entry key="SYSTEM/styles!A19" value="-align" />
+
+				<entry key="SYSTEM/styles!B20" value="a-l" />
+				<entry key="SYSTEM/styles!C20" value="text-align: left" />
+
+				<entry key="SYSTEM/styles!B21" value="a-c" />
+				<entry key="SYSTEM/styles!C21" value="text-align: center" />
+
+
+				<!-- there are the values for the formatter -->
+				<entry key="SYSTEM/fmt!A1" value="a" />
+				<entry key="SYSTEM/fmt!B1" value="0" />
+				<entry key="SYSTEM/fmt!A2" value="b" />
+				<entry key="SYSTEM/fmt!B2" value="1" />
+				<entry key="SYSTEM/fmt!A3" value="c" />
+				<entry key="SYSTEM/fmt!B3" value="2" />
+
+				<entry key="SYSTEM/testFunc!A1" value="=GET_TEST_VALUE()" />
+				<entry key="SYSTEM/testFunc!A2" value="=A1 + 1" />
+
+				<!-- -->
+				<!-- main -->
+				<!-- <entry key="main/ms!A1" value="10"/> -->
+				<!-- <entry key="main/ms!B1" value="=A1 + 100"/> -->
+				<!-- <entry key="main/ms.summary!A1" value="=ms!B1 + 1000"/> -->
+
+				<!-- users -->
+				<entry key="SYSTEM/users!A1" value="admin" />
+				<entry key="SYSTEM/users!B1" value="pass" />
+				<entry key="SYSTEM/users!C1" value="" />
+				<entry key="SYSTEM/users!D1" value="ROLE_ADMIN" />
+
+				<entry key="SYSTEM/users!A2" value="user-read-wk" />
+				<entry key="SYSTEM/users!B2" value="pass" />
+				<entry key="SYSTEM/users!C2" value="" />
+				<entry key="SYSTEM/users!D2" value="ROLE_USER" />
+
+				<entry key="SYSTEM/users!A3" value="user-write-wk" />
+				<entry key="SYSTEM/users!B3" value="pass" />
+				<entry key="SYSTEM/users!C3" value="" />
+				<entry key="SYSTEM/users!D3" value="ROLE_USER" />
+
+				<entry key="SYSTEM/users!A4" value="user-read-sh" />
+				<entry key="SYSTEM/users!B4" value="pass" />
+				<entry key="SYSTEM/users!C4" value="" />
+				<entry key="SYSTEM/users!D4" value="ROLE_USER" />
+
+
+				<entry key="SYSTEM/users!A5" value="user-write-sh" />
+				<entry key="SYSTEM/users!B5" value="pass" />
+				<entry key="SYSTEM/users!C5" value="" />
+				<entry key="SYSTEM/users!D5" value="ROLE_USER" />
+
+				<entry key="SYSTEM/users!A6" value="user-none" />
+				<entry key="SYSTEM/users!B6" value="pass" />
+				<entry key="SYSTEM/users!C6" value="" />
+				<entry key="SYSTEM/users!D6" value="ROLE_USER" />
+
+				<!-- permissions -->
+				<entry key="ACL/permissions!A2" value="workbook" />
+				<entry key="ACL/permissions!B2" value="user-read-wk" />
+				<entry key="ACL/permissions!C2" value="" />
+				<entry key="ACL/permissions!D2" value="read" />
+
+				<entry key="ACL/permissions!A3" value="workbook" />
+				<entry key="ACL/permissions!B3" value="user-write-wk" />
+				<entry key="ACL/permissions!C3" value="" />
+				<entry key="ACL/permissions!D3" value="read,write" />
+
+				<!-- read right is needed on the workbook -->
+				<entry key="ACL/permissions!A4" value="workbook" />
+				<entry key="ACL/permissions!B4" value="user-read-sh" />
+				<entry key="ACL/permissions!C4" value="" />
+				<entry key="ACL/permissions!D4" value="read" />
+
+				<entry key="ACL/permissions!A5" value="sheet" />
+				<entry key="ACL/permissions!B5" value="user-read-sh" />
+				<entry key="ACL/permissions!C5" value="test" />
+				<entry key="ACL/permissions!D5" value="read" />
+
+				<!-- read right is needed on the workbook -->
+				<entry key="ACL/permissions!A6" value="workbook" />
+				<entry key="ACL/permissions!B6" value="user-write-sh" />
+				<entry key="ACL/permissions!C6" value="" />
+				<entry key="ACL/permissions!D6" value="read" />
+
+				<entry key="ACL/permissions!A7" value="sheet" />
+				<entry key="ACL/permissions!B7" value="user-write-sh" />
+				<entry key="ACL/permissions!C7" value="test" />
+				<entry key="ACL/permissions!D7" value="read,write" />
+
+				<entry key="ACL/test!A1" value="1" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- formula parser -->
+	<bean class="org.netxilia.functions.MathFunctions" />
+	<bean class="org.netxilia.functions.TextFunctions" />
+	<bean class="org.netxilia.functions.LogicalFunctions" />
+	<bean class="org.netxilia.functions.DateFunctions" />
+	<bean class="org.netxilia.functions.LookupFunctions" />
+
+	<!-- not ready yet -->
+	<bean class="org.netxilia.functions.ArrayFunctions" />
+	<bean class="org.netxilia.functions.FinancialFunctions" />
+	<bean class="org.netxilia.functions.StatisticalFunctions" />
+
+	<bean class="org.netxilia.spi.impl.structure.MyFunctions" />
+
+	<bean id="functionRegistry" class="org.netxilia.spi.impl.formula.function.FunctionRegistry" />
+	<bean id="formulaParser" class="org.netxilia.spi.impl.formula.JavaCCFormulaParserImpl">
+	</bean>
+
+	<bean id="sheetOperations" class="org.netxilia.api.impl.operation.SheetOperationsImpl">
+	</bean>
+
+	<bean id="userService" class="org.netxilia.api.impl.user.UserServiceImpl">
+	</bean>
+
+	<!-- the ACL service for sheets -->
+	<bean id="aclService" class="org.netxilia.api.impl.user.AclServiceImpl">
+	</bean>
+
+	<!-- the executor factory -->
+	<bean id="executorServiceFactory"
+		class="org.netxilia.spi.impl.structure.DirectExecutorServiceFactory">
+	</bean>
+
+	<bean id="preloadContextFactory"
+		class="org.netxilia.spi.impl.formula.PreloadedFormulaContextFactoryImpl"
+		primary="true">
+	</bean>
+
+	<bean id="moreCellCommands" class="org.netxilia.api.impl.command.MoreCellCommandsImpl">
+	</bean>
+
+	<!-- the workbook processor -->
+	<bean id="workbookProcessor" class="org.netxilia.api.impl.NetxiliaSystemImpl">
+	</bean>
+
+
+
+	<bean id="jsonSerializer" class="org.netxilia.api.impl.storage.json.GsonSerializerImpl">
+	</bean>
+
+
+	<!-- storage in database -->
+	<import resource="classpath:test-db-schema.xml" />
+	<bean id="mockDdlUtilsFactory" class="org.netxilia.spi.impl.storage.ddl.MockDDLUtilsFactory">
+	</bean>
+
+	<bean id="mockJdbcTemplateFactory"
+		class="org.netxilia.spi.impl.storage.MockConnectionWrapperFactory">
+	</bean>
+
+	<bean id="mockDataSouceConfigurationService"
+		class="org.netxilia.spi.impl.storage.MockDataSourceConfigurationService">
+	</bean>
+
+	<bean id="matrixMapper" class="org.netxilia.spi.impl.storage.db.SparseMatrixMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="cellsMapper" class="org.netxilia.spi.impl.storage.db.CellsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="columnsMapper" class="org.netxilia.spi.impl.storage.db.ColumnsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="normalRowsMapper" class="org.netxilia.spi.impl.storage.db.NormalRowsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="otherRowsMapper" class="org.netxilia.spi.impl.storage.db.OtherRowsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="rowsMapper" class="org.netxilia.spi.impl.storage.db.RowsMapper">
+	</bean>
+
+	<bean id="sheetsMapper" class="org.netxilia.spi.impl.storage.db.SheetsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="valuesTableModel" ref="table-values" />
+	</bean>
+
+	<bean id="workbooksMapper" class="org.netxilia.spi.impl.storage.db.WorkbooksMapper">
+	</bean>
+
+
+
+
+
+	<bean id="formulaCalculatorFactory"
+		class="org.netxilia.spi.impl.formula.FormulaCalculatorFactoryImpl">
+	</bean>
+
+	<!-- the style service for sheets -->
+	<bean id="styleService" class="org.netxilia.api.impl.display.StyleServiceImpl">
+	</bean>
+
+	<bean id="styleRepository" class="org.netxilia.api.impl.display.StyleRepositoryImpl">
+	</bean>
+
+
+	<!-- REAL STORAGE -->
+	<bean id="pool" class="org.apache.commons.pool.impl.GenericObjectPool"
+		scope="prototype">
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="maxActive" value="100" />
+		<property name="maxIdle" value="80" />
+		<property name="minIdle" value="5" />
+		<property name="maxWait" value="1000" />
+	</bean>
+
+	<bean id="dataSourceConfigurationService"
+		class="org.netxilia.api.impl.storage.DataSourceConfigurationServiceImpl"
+		destroy-method="close" autowire-candidate="false">
+		<property name="path" value="${user.home}/netxilia" />
+	</bean>
+
+	<bean id="dbStorageService"
+		class="org.netxilia.spi.impl.storage.db.DbWorkbookStorageServiceImpl">
+
+	</bean>
+
+	<bean id="ddlUtilsFactory" class="org.netxilia.spi.impl.storage.db.ddl.DDLUtilsFactoryImpl" autowire-candidate="false">
+	</bean>
+	
+
+	<bean id="jdbcTemplateFactory"
+		class="org.netxilia.spi.impl.storage.db.sql.DefaultConnectionWrapperFactory"  autowire-candidate="false">
+	</bean>
+	
+	<bean id="cachedDbStorageService"
+		class="org.netxilia.spi.impl.storage.cache.CachedDbWorkbookStorageServiceImpl"
+		autowire-candidate="false">
+		<property name="dataSourceConfigurationService" ref="dataSourceConfigurationService" />
+		<property name="ddlUtilsFactory" ref="ddlUtilsFactory" />
+		<property name="connectionWrapperFactory" ref="jdbcTemplateFactory" />
+	</bean>
+
+</beans>

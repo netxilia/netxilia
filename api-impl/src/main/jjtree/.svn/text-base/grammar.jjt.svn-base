@@ -1,0 +1,248 @@
+/**
+* Nexilia Excel Formula Grammar
+* To be compiled with jjtree & javacc.
+*
+* @author catac
+* @since Nov 8, 2009
+*/
+
+options {
+  JDK_VERSION = "1.5";
+  STATIC=false;
+  MULTI=true;
+  NODE_CLASS="ASTBaseNode";
+  BUILD_NODE_FILES=false;
+}
+
+PARSER_BEGIN(FormulaParser)
+package org.netxilia.api.formula.impl.parser;
+
+import org.netxilia.api.formula.impl.function.FunctionRegistry;
+
+public class FormulaParser {
+	private FunctionRegistry funReg;
+
+	public void setFunctionRegistry(FunctionRegistry funReg) {		this.funReg = funReg;
+	}
+}
+
+PARSER_END(FormulaParser)
+
+SKIP :
+{
+	" " | "\t" | "\n" | "\r"
+}
+
+TOKEN [IGNORE_CASE] : /* LITERALS, CELL REFERENCES & IDENTIFIERS */
+{
+< NUMBER_LITERAL:
+	<INTEGER> ( "." (<DIGIT>)* (<EXPONENT>)? )?
+	| "." <INTEGER> (<EXPONENT>)? >
+|	< #EXPONENT: ["e","E"] (["+","-"])? <INTEGER> >
+|	< #INTEGER: (<DIGIT>)+ >
+|
+< STRING_LITERAL:
+	"\"" ( "\"\"" | (~["\""]) )* "\"" >  
+|
+< BOOLEAN_LITERAL:
+	"true" | "false" >
+|
+< SHEET_REF:
+	<IDENTIFIER> "!" >
+| 
+< CELL_REF:
+	("$")? <COLUMN> ("$")? <ROW> >
+|	< #COLUMN: <LETTER> | <LETTER><LETTER> >
+|	< #ROW: <INTEGER> >
+| 
+< RANGE_REF:
+	<CELL_REF> ":" <CELL_REF> >
+|
+< VECTOR_REF:
+	<COLUMN_RANGE> | <ROW_RANGE> >
+|	< #COLUMN_RANGE: <COLUMN> ":" <COLUMN> >
+|	< #ROW_RANGE: <ROW> ":" <ROW> >
+| 
+< IDENTIFIER:
+	<_LETTER> (<_LETTER>|<DIGIT>)* >
+|	< #_LETTER: ["_"] | <LETTER> >
+|	< #LETTER: ["a"-"z"] >
+|	< #DIGIT: ["0"-"9"] >
+}
+
+TOKEN : /* OPERATORS, order of increasing priority */
+{
+< LOGICAL_OPERATOR: "=" | "<" | "<=" | ">" | ">=" | "<>" | "!=" >
+|
+< CONCAT_OPERATOR: "&" >
+|
+< ADD_OPERATOR: "+" | "-" >
+|
+< MUL_OPERATOR: "*" | "/" >
+|
+< EXP_OPERATOR: "^" >
+|
+< PERCENT_OPERATOR: "%" >
+}
+
+ASTFormulaTree buildFormulaTree() #FormulaTree : { }
+{
+	Expression() <EOF>	{ return jjtThis; }
+}
+
+void Expression() #void : { }
+{	LogicalExpression() 
+}
+
+void LogicalExpression() #void :
+{
+  Token t;
+}
+{	ConcatExpression()
+	(
+		t=<LOGICAL_OPERATOR> ConcatExpression()		{
+	  		jjtThis.setOperator(t.image);		}
+		#LogicalExpression(2)
+	)*
+}
+
+void ConcatExpression() #void : { }
+{	AdditiveExpression() ( <CONCAT_OPERATOR> AdditiveExpression() #ConcatExpression(2) )*
+}
+
+void AdditiveExpression() #void :
+{
+	Token t;
+}
+{	MultiplicativeExpression()
+	(
+		t=<ADD_OPERATOR>		MultiplicativeExpression()
+		{
+			jjtThis.setOperator(t.image);
+		}
+		#NumericExpression(2)
+	)*
+}
+
+void MultiplicativeExpression() #void :
+{
+	Token t;
+}
+{	ExponentialExpression()
+	(
+	 	t=<MUL_OPERATOR>
+	 	ExponentialExpression()
+		{
+			jjtThis.setOperator(t.image);
+		}
+	 	#NumericExpression(2)
+	 )*
+}
+
+void ExponentialExpression() #void : 
+{ 
+	Token t;
+}
+{	PercentExpression() ( t = <EXP_OPERATOR> 
+		PercentExpression() 
+		{
+			jjtThis.setOperator(t.image);
+		} 
+	#NumericExpression(2) 
+	)*
+}
+
+void PercentExpression() #PercentExpression(>1) : { }
+{	UnaryExpression() ( PercentCount() )?}
+
+void PercentCount() : { }
+{
+	( <PERCENT_OPERATOR> { jjtThis.incCount(); } )+
+}
+
+void UnaryExpression() #UnaryExpression(>1) : { }
+{	 ( UnaryOperator() )? ReferenceExpression() 
+}
+
+void UnaryOperator() #UnaryOperator :
+{
+	Token t;
+}
+{	t=<ADD_OPERATOR> { jjtThis.setOperator(t.image); }
+}
+
+void ReferenceExpression() #void : { }
+{
+	Primitive() | ParenthesizedExpression() | Reference() 
+}
+
+void Primitive() #void : { }
+{
+  	PrimitiveNumber() | PrimitiveString() | PrimitiveBoolean()}
+
+void PrimitiveNumber() :
+{	Token t;
+}
+{  t=<NUMBER_LITERAL>  {    jjtThis.setNumber(Double.valueOf(t.image));
+  }
+}
+
+void PrimitiveString() :
+{
+	Token t;
+}
+{
+  t=<STRING_LITERAL>
+  {
+    jjtThis.setString(t.image);
+  }
+}
+
+void PrimitiveBoolean() :
+{
+	Token t;
+}
+{
+  t=<BOOLEAN_LITERAL>
+  {
+    jjtThis.setBoolean(Boolean.valueOf(t.image));
+  }
+}
+
+// we extract this separately only to remember the existence of paranthesis
+void ParenthesizedExpression() : { }
+{
+  "(" Expression() ")"}
+
+void Reference() #void :
+{
+	Token st = new Token(0, "");
+	Token ct; Token rt; Token vt; Token at;
+	Token ft; Token rowt= new Token(0, "");
+}
+{
+	//put function and alias in the same method to distinguish between "ID (" and "ID"
+	LOOKAHEAD(2)
+	(ft=<IDENTIFIER>	{
+	  jjtThis.setName(ft.image, funReg);
+	}  "("	( Expression() )? ( "," Expression() )* ")" ) #Function
+	|	( st=<SHEET_REF> )?
+	(
+		ct=<CELL_REF> {
+			jjtThis.setRef(st.image, ct.image);
+			} #CellReference
+		| 
+		rt=<RANGE_REF> {
+			jjtThis.setRef(st.image, rt.image);
+			} #RangeReference
+		| 		vt=<VECTOR_REF> {
+			jjtThis.setRef(st.image, vt.image);
+			} #VectorReference
+		| 
+		at=<IDENTIFIER> (rowt=<NUMBER_LITERAL>)?{
+			jjtThis.setRef(st.image, at.image, rowt.image);
+			 } #AliasReference
+	)
+}
+
+

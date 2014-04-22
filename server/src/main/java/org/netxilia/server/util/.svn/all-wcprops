@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/util
+END
+ILazyElementResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/util/ILazyElementResolver.java
+END
+StringHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/util/StringHolder.java
+END
+LazyArrayList.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/util/LazyArrayList.java
+END

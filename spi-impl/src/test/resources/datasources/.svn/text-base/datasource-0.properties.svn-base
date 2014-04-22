@@ -1,0 +1,8 @@
+jdbc.driver=org.h2.Driver
+jdbc.url=jdbc:h2:mem:nxtest
+
+jdbc.username=netxilia
+jdbc.password=nx
+jdbc.name=nx test
+jdbc.description=H2 example
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib
+END
+BoundsPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/BoundsPlugin.java
+END
+JSON.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/JSON.java
+END
+TDJQueryHelpers.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/TDJQueryHelpers.java
+END
+NetxiliaJQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/NetxiliaJQuery.java
+END
+NetxiliaGlobal.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/NetxiliaGlobal.java
+END
+NetxiliaGlobalJQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/NetxiliaGlobalJQuery.java
+END
+OpenFlashChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/OpenFlashChart.java
+END
+CaretPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/jslib/CaretPosition.java
+END

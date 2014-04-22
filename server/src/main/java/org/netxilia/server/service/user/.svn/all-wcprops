@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/service/user
+END
+WindowIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/service/user/WindowIndex.java
+END
+IWindowProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/service/user/IWindowProcessor.java
+END
+WindowInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/service/user/WindowInfo.java
+END
+Window.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/service/user/Window.java
+END
+SessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/325/trunk/server/src/main/java/org/netxilia/server/service/user/SessionListener.java
+END

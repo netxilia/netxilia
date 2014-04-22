@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	</bean>
+
+	<!-- TODO: does not work with jetty yet -->
+	<bean class="org.netxilia.api.impl.utils.DynamicClassLoader" />
+
+	<import resource="classpath:formatters.xml" />
+
+	<bean id="jsonSerializer" class="org.netxilia.api.impl.storage.json.GsonSerializerImpl">
+	</bean>
+
+	<!-- storage in database -->
+	<import resource="classpath:db-schema.xml" />
+	<bean id="ddlUtilsFactory"
+		class="org.netxilia.spi.impl.storage.db.ddl.DDLUtilsFactoryImpl">
+	</bean>
+
+	<bean id="jdbcTemplateFactory"
+		class="org.netxilia.spi.impl.storage.db.sql.DefaultConnectionWrapperFactory">
+	</bean>
+
+
+	<bean id="matrixMapper" class="org.netxilia.spi.impl.storage.db.SparseMatrixMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="cellsMapper" class="org.netxilia.spi.impl.storage.db.CellsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="columnsMapper" class="org.netxilia.spi.impl.storage.db.ColumnsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="normalRowsMapper" class="org.netxilia.spi.impl.storage.db.NormalRowsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="otherRowsMapper" class="org.netxilia.spi.impl.storage.db.OtherRowsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="rowsMapper" class="org.netxilia.spi.impl.storage.db.RowsMapper">
+	</bean>
+
+	<bean id="sheetsMapper" class="org.netxilia.spi.impl.storage.db.SheetsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="valuesTableModel" ref="table-values" />
+	</bean>
+
+	<bean id="workbooksMapper" class="org.netxilia.spi.impl.storage.db.WorkbooksMapper">
+	</bean>
+
+	<bean id="dbStorageService"
+		class="org.netxilia.spi.impl.storage.cache.CachedDbWorkbookStorageServiceImpl"
+		primary="true">
+	</bean>
+
+	<bean id="preloadContextFactory"
+		class="org.netxilia.spi.impl.formula.PreloadedFormulaContextFactoryImpl"
+		primary="true">
+	</bean>
+
+
+	<bean id="pool" class="org.apache.commons.pool.impl.GenericObjectPool"
+		scope="prototype">
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="maxActive" value="100" />
+		<property name="maxIdle" value="80" />
+		<property name="minIdle" value="5" />
+		<property name="maxWait" value="1000" />
+	</bean>
+
+	<bean id="dataSourceConfigurationService"
+		class="org.netxilia.api.impl.storage.DataSourceConfigurationServiceImpl"
+		destroy-method="close">
+		<property name="path" value="${user.home}/netxilia" />
+	</bean>
+
+
+	<!-- formula parser -->
+	<bean id="functionRegistry" class="org.netxilia.spi.impl.formula.function.FunctionRegistry" />
+
+	<bean id="formulaParser" class="org.netxilia.spi.impl.formula.JavaCCFormulaParserImpl">
+	</bean>
+
+	<bean id="userService" class="org.netxilia.api.impl.user.UserServiceImpl">
+	</bean>
+
+	<!-- the ACL service for sheets -->
+	<bean id="aclService" class="org.netxilia.api.impl.user.AclServiceImpl">
+	</bean>
+
+	<bean id="formulaCalculatorFactory"
+		class="org.netxilia.spi.impl.formula.FormulaCalculatorFactoryImpl">
+	</bean>
+
+	<!-- the style service for sheets -->
+	<bean id="styleService" class="org.netxilia.api.impl.display.StyleServiceImpl">
+	</bean>
+
+	<bean id="styleRepository" class="org.netxilia.api.impl.display.StyleRepositoryImpl">
+	</bean>
+
+
+	<!-- the executor factory -->
+	<bean id="executorServiceFactory"
+		class="org.netxilia.api.impl.concurrent.OneActorPerThreadExecutorServiceFactory">
+		<property name="threadCount" value="1" />
+	</bean>
+
+	<bean id="moreCellCommands" class="org.netxilia.api.impl.command.MoreCellCommandsImpl">
+	</bean>
+
+	<bean id="moreRowCommands" class="org.netxilia.api.impl.command.MoreRowCommandsImpl">
+	</bean>
+
+	<bean id="moreColumnCommands" class="org.netxilia.api.impl.command.MoreColumnCommandsImpl">
+	</bean>
+
+	<bean id="sheetOperations" class="org.netxilia.api.impl.operation.SheetOperationsImpl">
+	</bean>
+
+	<bean id="workbookProcessor" class="org.netxilia.api.impl.NetxiliaSystemImpl"
+		destroy-method="close">
+	</bean>
+
+
+
+</beans>

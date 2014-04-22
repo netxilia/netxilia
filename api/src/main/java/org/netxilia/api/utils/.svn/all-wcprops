@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/netxilia/code/!svn/ver/419/trunk/api/src/main/java/org/netxilia/api/utils
+END
+SheetUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/utils/SheetUtils.java
+END
+MatrixBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/utils/MatrixBuilder.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/utils/Pair.java
+END
+CollectionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/netxilia/code/!svn/ver/395/trunk/api/src/main/java/org/netxilia/api/utils/CollectionUtils.java
+END
+ReadablePartialWithDefault.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/netxilia/code/!svn/ver/335/trunk/api/src/main/java/org/netxilia/api/utils/ReadablePartialWithDefault.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/netxilia/code/!svn/ver/335/trunk/api/src/main/java/org/netxilia/api/utils/DateUtils.java
+END
+IListElementCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/utils/IListElementCreator.java
+END
+Matrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/netxilia/code/!svn/ver/419/trunk/api/src/main/java/org/netxilia/api/utils/Matrix.java
+END
+IMatrixElementCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/utils/IMatrixElementCreator.java
+END
+ObjectUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/utils/ObjectUtils.java
+END
+StringXmlAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/utils/StringXmlAdapter.java
+END

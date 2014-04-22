@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/376/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/sql
+END
+ProxyFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/sql/ProxyFactory.java
+END
+MockResultSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/376/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/sql/MockResultSet.java
+END
+MockResultSetMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/sql/MockResultSetMetaData.java
+END

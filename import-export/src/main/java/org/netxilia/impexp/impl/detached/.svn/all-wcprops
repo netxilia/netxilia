@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/netxilia/code/!svn/ver/390/trunk/import-export/src/main/java/org/netxilia/impexp/impl/detached
+END
+DetachedColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/netxilia/code/!svn/ver/384/trunk/import-export/src/main/java/org/netxilia/impexp/impl/detached/DetachedColumn.java
+END
+DetachedCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/390/trunk/import-export/src/main/java/org/netxilia/impexp/impl/detached/DetachedCell.java
+END
+DetachedRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/netxilia/code/!svn/ver/384/trunk/import-export/src/main/java/org/netxilia/impexp/impl/detached/DetachedRow.java
+END
+DetachedSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/384/trunk/import-export/src/main/java/org/netxilia/impexp/impl/detached/DetachedSheet.java
+END

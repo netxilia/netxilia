@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/netxilia/code/!svn/ver/401/trunk/api/src/main/java/org/netxilia/api/storage
+END
+DataSourceConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/storage/DataSourceConfiguration.java
+END
+IDataSourceConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/400/trunk/api/src/main/java/org/netxilia/api/storage/IDataSourceConfigurationService.java
+END
+IJsonSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/369/trunk/api/src/main/java/org/netxilia/api/storage/IJsonSerializer.java
+END
+DataSourceConfigurationId.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/storage/DataSourceConfigurationId.java
+END
+IDataSourceConfigurationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/401/trunk/api/src/main/java/org/netxilia/api/storage/IDataSourceConfigurationListener.java
+END

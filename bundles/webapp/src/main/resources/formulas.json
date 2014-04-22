@@ -1,0 +1,1550 @@
+{
+    "type" : "normal",
+    "name" : "formulas",
+    "aliases" : {},
+    "charts" : [],
+    "spans":["A12:C12","A4:J4","A11:C11","A1:J1","A3:J3","A14:C14","A6:J6","A13:C13","A30:I30","A5:I5","A15:C15","A7:J7","A24:C24","A16:C16","A17:C17","A10:C10","A2:J2","A25:C25","A18:C19","A26:C26"],
+    "columns" : [{},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}],
+    "rows" : [{
+        "cells" : [{
+            "content" : "\"This spreadsheet analyzes the lease/purchase decision.  In the case of a purchase, it is assumed ",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "sales tax is paid on the negotiated price at the time of purchase, and property taxes are paid annually.",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "In the case of a lease, it is assumed sales tax is paid on the difference between the list price and the ",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "payoff at the time of purchase, sales tax is paid on the payoff when the lease expires, and property taxes",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "are paid by the lessor.  This spreadsheet assumes the item is purchased at the payoff price at the time",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "the lease expires.  The lease has additional value to the lessee because of the option not to purchase.",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "The features of your lease may be different than assumed here. ",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Assumptions",
+            "styles" : "b u"
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "List price"
+        },
+        {},
+        {},
+        {
+            "content" : "26000"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Negotiated price",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "24000"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Lease period (months)",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "36"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Payoff"
+        },
+        {},
+        {},
+        {
+            "content" : "20000"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Interest rate (APR)",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "0.09"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Effective annual rate",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "=+(1+D15/12)^12-1"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Sales tax rate",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "0.06"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Property tax (annual)",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "300"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Lease payment",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "280"
+        },
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Results",
+            "styles" : "b u"
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "styles" : "bb"
+        },
+        {
+            "styles" : "bb"
+        },
+        {
+            "styles" : "bb"
+        },
+        {
+            "content" : "Purchase",
+            "styles" : "bb"
+        },
+        {
+            "styles" : "bb"
+        },
+        {
+            "content" : "Lease",
+            "styles" : "bb"
+        },
+        {},
+        {}]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Present value of payments",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "=+D12",
+            "styles": "dollar"
+        },
+        {},
+        {
+            "content" : "=+D19-PV(D15/12, D13-1, D19)+D14/(1+D15/12)^D13",
+            "styles": "dollar"
+        },
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Present value of sales tax",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "=+D17*D12",
+            "styles": "dollar"
+        },
+        {},
+        {
+            "content" : "=0.06*(D11-D14)+D17*D14/(1+D15/12)^D13",
+            "styles": "dollar"
+        },
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Present value of property tax",
+            "colSpan" : 3
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            "content" : "=-PV(D16, D13/12, D18)",
+            "styles": "dollar"
+        },
+        {},
+        {
+            "content" : "0",
+            "styles": "dollar"
+        },
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "Total"
+        },
+        {},
+        {},
+        {
+            "content" : "=+SUM(D24:D26)",
+            "styles": "dollar"
+        },
+        {},
+        {
+            "content" : "=+F24+F25",
+            "styles": "dollar"
+        },
+        {},
+        {}]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "The following table provides a check on the lease calculations above.",
+            "colSpan" : 8
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        },
+        {
+            
+        }]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {
+            "content" : "Sales"
+        },
+        {},
+        {
+            "content" : "PV"
+        },
+        {},
+        {
+            "content" : "Cumul"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "Month",
+            "styles" : "bb"
+        },
+        {
+            "styles" : "bb"
+        },
+        {
+            "content" : "Payment",
+            "styles" : "bb"
+        },
+        {
+            "content" : "Tax",
+            "styles" : "bb"
+        },
+        {
+            "content" : "Total",
+            "styles" : "bb"
+        },
+        {
+            "content" : "Factor",
+            "styles" : "bb"
+        },
+        {
+            "content" : "PV",
+            "styles" : "bb"
+        },
+        {
+            "content" : "PV",
+            "styles" : "bb"
+        }]
+    },
+    {
+        "cells" : [{},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}]
+    },
+    {
+        "cells" : [{
+            "content" : "0"
+        },
+        {},
+        {
+            "content" : "=+D19",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+D17*(D11-D14)"
+        },
+        {
+            "content" : "=+SUM(C35:D35)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "1"
+        },
+        {
+            "content" : "=+E35*F35"
+        },
+        {
+            "content" : "=+G35"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "1"
+        },
+        {},
+        {
+            "content" : "=+C35",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C36:D36)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F35/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E36*F36"
+        },
+        {
+            "content" : "=+H35+G36"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "2"
+        },
+        {},
+        {
+            "content" : "=+C36",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C37:D37)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F36/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E37*F37"
+        },
+        {
+            "content" : "=+H36+G37"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "3"
+        },
+        {},
+        {
+            "content" : "=+C37",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C38:D38)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F37/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E38*F38"
+        },
+        {
+            "content" : "=+H37+G38"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "4"
+        },
+        {},
+        {
+            "content" : "=+C38",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C39:D39)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F38/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E39*F39"
+        },
+        {
+            "content" : "=+H38+G39"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "5"
+        },
+        {},
+        {
+            "content" : "=+C39",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C40:D40)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F39/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E40*F40"
+        },
+        {
+            "content" : "=+H39+G40"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "6"
+        },
+        {},
+        {
+            "content" : "=+C40",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C41:D41)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F40/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E41*F41"
+        },
+        {
+            "content" : "=+H40+G41"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "7"
+        },
+        {},
+        {
+            "content" : "=+C41",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C42:D42)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F41/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E42*F42"
+        },
+        {
+            "content" : "=+H41+G42"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "8"
+        },
+        {},
+        {
+            "content" : "=+C42",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C43:D43)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F42/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E43*F43"
+        },
+        {
+            "content" : "=+H42+G43"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "9"
+        },
+        {},
+        {
+            "content" : "=+C43",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C44:D44)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F43/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E44*F44"
+        },
+        {
+            "content" : "=+H43+G44"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "10"
+        },
+        {},
+        {
+            "content" : "=+C44",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C45:D45)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F44/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E45*F45"
+        },
+        {
+            "content" : "=+H44+G45"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "11"
+        },
+        {},
+        {
+            "content" : "=+C45",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C46:D46)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F45/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E46*F46"
+        },
+        {
+            "content" : "=+H45+G46"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "12"
+        },
+        {},
+        {
+            "content" : "=+C46",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C47:D47)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F46/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E47*F47"
+        },
+        {
+            "content" : "=+H46+G47"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "13"
+        },
+        {},
+        {
+            "content" : "=+C47",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C48:D48)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F47/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E48*F48"
+        },
+        {
+            "content" : "=+H47+G48"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "14"
+        },
+        {},
+        {
+            "content" : "=+C48",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C49:D49)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F48/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E49*F49"
+        },
+        {
+            "content" : "=+H48+G49"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "15"
+        },
+        {},
+        {
+            "content" : "=+C49",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C50:D50)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F49/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E50*F50"
+        },
+        {
+            "content" : "=+H49+G50"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "16"
+        },
+        {},
+        {
+            "content" : "=+C50",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C51:D51)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F50/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E51*F51"
+        },
+        {
+            "content" : "=+H50+G51"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "17"
+        },
+        {},
+        {
+            "content" : "=+C51",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C52:D52)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F51/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E52*F52"
+        },
+        {
+            "content" : "=+H51+G52"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "18"
+        },
+        {},
+        {
+            "content" : "=+C52",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C53:D53)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F52/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E53*F53"
+        },
+        {
+            "content" : "=+H52+G53"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "19"
+        },
+        {},
+        {
+            "content" : "=+C53",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C54:D54)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F53/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E54*F54"
+        },
+        {
+            "content" : "=+H53+G54"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "20"
+        },
+        {},
+        {
+            "content" : "=+C54",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C55:D55)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F54/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E55*F55"
+        },
+        {
+            "content" : "=+H54+G55"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "21"
+        },
+        {},
+        {
+            "content" : "=+C55",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C56:D56)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F55/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E56*F56"
+        },
+        {
+            "content" : "=+H55+G56"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "22"
+        },
+        {},
+        {
+            "content" : "=+C56",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C57:D57)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F56/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E57*F57"
+        },
+        {
+            "content" : "=+H56+G57"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "23"
+        },
+        {},
+        {
+            "content" : "=+C57",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C58:D58)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F57/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E58*F58"
+        },
+        {
+            "content" : "=+H57+G58"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "24"
+        },
+        {},
+        {
+            "content" : "=+C58",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C59:D59)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F58/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E59*F59"
+        },
+        {
+            "content" : "=+H58+G59"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "25"
+        },
+        {},
+        {
+            "content" : "=+C59",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C60:D60)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F59/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E60*F60"
+        },
+        {
+            "content" : "=+H59+G60"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "26"
+        },
+        {},
+        {
+            "content" : "=+C60",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C61:D61)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F60/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E61*F61"
+        },
+        {
+            "content" : "=+H60+G61"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "27"
+        },
+        {},
+        {
+            "content" : "=+C61",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C62:D62)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F61/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E62*F62"
+        },
+        {
+            "content" : "=+H61+G62"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "28"
+        },
+        {},
+        {
+            "content" : "=+C62",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C63:D63)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F62/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E63*F63"
+        },
+        {
+            "content" : "=+H62+G63"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "29"
+        },
+        {},
+        {
+            "content" : "=+C63",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C64:D64)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F63/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E64*F64"
+        },
+        {
+            "content" : "=+H63+G64"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "30"
+        },
+        {},
+        {
+            "content" : "=+C64",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C65:D65)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F64/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E65*F65"
+        },
+        {
+            "content" : "=+H64+G65"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "31"
+        },
+        {},
+        {
+            "content" : "=+C65",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C66:D66)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F65/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E66*F66"
+        },
+        {
+            "content" : "=+H65+G66"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "32"
+        },
+        {},
+        {
+            "content" : "=+C66",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C67:D67)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F66/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E67*F67"
+        },
+        {
+            "content" : "=+H66+G67"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "33"
+        },
+        {},
+        {
+            "content" : "=+C67",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C68:D68)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F67/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E68*F68"
+        },
+        {
+            "content" : "=+H67+G68"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "34"
+        },
+        {},
+        {
+            "content" : "=+C68",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C69:D69)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F68/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E69*F69"
+        },
+        {
+            "content" : "=+H68+G69"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "35"
+        },
+        {},
+        {
+            "content" : "=+C69",
+            "styles": "dollar-rounded"
+        },
+        {},
+        {
+            "content" : "=+SUM(C70:D70)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F69/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E70*F70"
+        },
+        {
+            "content" : "=+H69+G70"
+        }]
+    },
+    {
+        "cells" : [{
+            "content" : "36"
+        },
+        {},
+        {
+            "content" : "=+D14",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+D17*D14"
+        },
+        {
+            "content" : "=+SUM(C71:D71)",
+            "styles": "dollar-rounded"
+        },
+        {
+            "content" : "=+F70/(1+$D$15/12)"
+        },
+        {
+            "content" : "=+E71*F71"
+        },
+        {
+            "content" : "=+H70+G71"
+        }]
+    }]
+}

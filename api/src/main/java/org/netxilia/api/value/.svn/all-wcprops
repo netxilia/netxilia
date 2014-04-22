@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/netxilia/code/!svn/ver/421/trunk/api/src/main/java/org/netxilia/api/value
+END
+IDelegateValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/value/IDelegateValue.java
+END
+NamedValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/411/trunk/api/src/main/java/org/netxilia/api/value/NamedValue.java
+END
+RichValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/netxilia/code/!svn/ver/344/trunk/api/src/main/java/org/netxilia/api/value/RichValue.java
+END
+IGenericValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/netxilia/code/!svn/ver/335/trunk/api/src/main/java/org/netxilia/api/value/IGenericValue.java
+END
+NumberValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/netxilia/code/!svn/ver/335/trunk/api/src/main/java/org/netxilia/api/value/NumberValue.java
+END
+ErrorValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/335/trunk/api/src/main/java/org/netxilia/api/value/ErrorValue.java
+END
+ErrorValueType.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/value/ErrorValueType.java
+END
+RichValueBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/391/trunk/api/src/main/java/org/netxilia/api/value/RichValueBuilder.java
+END
+GenericValueUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/380/trunk/api/src/main/java/org/netxilia/api/value/GenericValueUtils.java
+END
+ReferenceValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/netxilia/code/!svn/ver/414/trunk/api/src/main/java/org/netxilia/api/value/ReferenceValue.java
+END
+IGenericValueParseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/netxilia/code/!svn/ver/376/trunk/api/src/main/java/org/netxilia/api/value/IGenericValueParseService.java
+END
+IGenericValueParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/376/trunk/api/src/main/java/org/netxilia/api/value/IGenericValueParser.java
+END
+StringValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/netxilia/code/!svn/ver/335/trunk/api/src/main/java/org/netxilia/api/value/StringValue.java
+END
+DateValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/netxilia/code/!svn/ver/377/trunk/api/src/main/java/org/netxilia/api/value/DateValue.java
+END
+GenericValueType.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/323/trunk/api/src/main/java/org/netxilia/api/value/GenericValueType.java
+END
+BooleanValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/netxilia/code/!svn/ver/421/trunk/api/src/main/java/org/netxilia/api/value/BooleanValue.java
+END

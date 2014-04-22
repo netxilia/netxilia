@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/netxilia/code/!svn/ver/426/trunk/spi/src/main/java/org/netxilia/spi/storage
+END
+ISheetStorageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/netxilia/code/!svn/ver/417/trunk/spi/src/main/java/org/netxilia/spi/storage/ISheetStorageService.java
+END
+IWorkbookStorageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/netxilia/code/!svn/ver/426/trunk/spi/src/main/java/org/netxilia/spi/storage/IWorkbookStorageService.java
+END

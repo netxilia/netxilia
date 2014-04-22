@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/netxilia/code/!svn/ver/426/trunk/api/src/main/java/org/netxilia/api/display
+END
+IStyleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/netxilia/code/!svn/ver/426/trunk/api/src/main/java/org/netxilia/api/display/IStyleService.java
+END
+StyleApplyMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/376/trunk/api/src/main/java/org/netxilia/api/display/StyleApplyMode.java
+END
+IStyleFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/412/trunk/api/src/main/java/org/netxilia/api/display/IStyleFormatter.java
+END
+StyleGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/netxilia/code/!svn/ver/343/trunk/api/src/main/java/org/netxilia/api/display/StyleGroup.java
+END
+Style.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/netxilia/code/!svn/ver/343/trunk/api/src/main/java/org/netxilia/api/display/Style.java
+END
+DefaultStyleGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/display/DefaultStyleGroup.java
+END
+Styles.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/netxilia/code/!svn/ver/377/trunk/api/src/main/java/org/netxilia/api/display/Styles.java
+END
+StyleAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/343/trunk/api/src/main/java/org/netxilia/api/display/StyleAttribute.java
+END
+DefaultStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/netxilia/code/!svn/ver/343/trunk/api/src/main/java/org/netxilia/api/display/DefaultStyle.java
+END
+IValueListStyleFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/netxilia/code/!svn/ver/343/trunk/api/src/main/java/org/netxilia/api/display/IValueListStyleFormatter.java
+END
+StyleDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/412/trunk/api/src/main/java/org/netxilia/api/display/StyleDefinition.java
+END

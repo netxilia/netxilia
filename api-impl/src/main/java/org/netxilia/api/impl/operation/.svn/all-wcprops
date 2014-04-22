@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/netxilia/code/!svn/ver/386/trunk/api-impl/src/main/java/org/netxilia/api/impl/operation
+END
+SheetOperationsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/386/trunk/api-impl/src/main/java/org/netxilia/api/impl/operation/SheetOperationsImpl.java
+END
+FilterOperationActor.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/384/trunk/api-impl/src/main/java/org/netxilia/api/impl/operation/FilterOperationActor.java
+END
+FindOperationActor.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/netxilia/code/!svn/ver/386/trunk/api-impl/src/main/java/org/netxilia/api/impl/operation/FindOperationActor.java
+END

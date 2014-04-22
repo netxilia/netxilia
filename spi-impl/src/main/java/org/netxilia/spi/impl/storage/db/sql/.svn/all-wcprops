@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/netxilia/code/!svn/ver/396/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql
+END
+IConnectionWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql/IConnectionWrapper.java
+END
+RowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql/RowMapper.java
+END
+DefaultConnectionWrapperFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql/DefaultConnectionWrapperFactory.java
+END
+IConnectionWrapperFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql/IConnectionWrapperFactory.java
+END
+RowMapperResultSetExtractor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql/RowMapperResultSetExtractor.java
+END
+DefaultConnectionWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/netxilia/code/!svn/ver/396/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/sql/DefaultConnectionWrapper.java
+END

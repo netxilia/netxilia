@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.netxilia</groupId>
+	<artifactId>netxilia</artifactId>
+	<packaging>pom</packaging>
+	<name>Netxilia</name>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>jax-rs-js-client</module>
+		<module>jax-rs-html</module>
+		<module>api</module>
+		<module>functions</module>
+		<module>api-impl</module>
+		<module>spi</module>
+		<module>spi-impl</module>
+		<module>import-export</module>
+		<module>server</module>
+	</modules>
+	<repositories>
+<!-- 		<repository> -->
+<!-- 			<id>main</id> -->
+<!-- 			<name>Open Maven Repository</name> -->
+<!-- 			<url>http://repo1.maven.org/maven2/</url> -->
+<!-- 		</repository> -->
+<!-- 		<repository> -->
+<!-- 			<id>apache.snapshots</id> -->
+<!-- 			<url>http://people.apache.org/repo/m2-snapshot-repository/</url> -->
+<!-- 		</repository> -->
+<!-- 		<repository> -->
+<!-- 			<id>codehaus.snapshots</id> -->
+<!-- 			<url>http://snapshots.repository.codehaus.org</url> -->
+<!-- 		</repository>		 -->
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+			<layout>default</layout>
+		</repository>
+
+	</repositories>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

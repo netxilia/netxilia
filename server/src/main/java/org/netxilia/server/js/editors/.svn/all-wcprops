@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/js/editors
+END
+DateEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/js/editors/DateEditor.java
+END
+Editor.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/js/editors/Editor.java
+END
+SelectEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/js/editors/SelectEditor.java
+END
+EditingContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/js/editors/EditingContext.java
+END
+TextEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/428/trunk/server/src/main/java/org/netxilia/server/js/editors/TextEditor.java
+END

@@ -1,0 +1,7 @@
+Copy & Paste
+
+Due to browsers' restrictions a web page cannot safely manipulate user's clipboard using menus (or javascript). 
+The only way to communicate with external applications using clipboard is via a hidden textarea and ONLY is the user uses keyboard shortcut (Ctrl+C, Ctrl+V, Ctrl+X).
+That's why the user has to be made aware that there is a different behaviour of the application whether he uses the menus or the keyboard shortcuts.
+
+The menus will be kept for internal Copy&Paste. 

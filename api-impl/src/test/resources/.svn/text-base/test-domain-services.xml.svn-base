@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+
+	<import resource="classpath:test-formatters.xml" />
+
+	<!-- dummy workbook service -->
+	<bean id="storageService"
+		class="org.netxilia.api.impl.storage.InMemoryStorageServiceImpl">
+		<property name="values">
+			<map>
+				<!-- system -->
+				<entry key="SYSTEM/styles!B1" value="date" />
+				<entry key="SYSTEM/styles!C1" value="pattern-type:date;pattern:dd-MM-yyyy" />
+
+				<entry key="SYSTEM/styles!B2" value="time" />
+				<entry key="SYSTEM/styles!C2" value="pattern-type:date;pattern:HH:mm:ss" />
+
+				<entry key="SYSTEM/styles!B3" value="dateTime" />
+				<entry key="SYSTEM/styles!C3" value="pattern-type:date;pattern:dd-MM-yyyy HH:mm:ss" />
+
+				<entry key="SYSTEM/styles!B4" value="short-date" />
+				<entry key="SYSTEM/styles!C4" value="pattern-type:date;pattern:dd-MM-yy" />
+
+				<entry key="SYSTEM/styles!B5" value="short-time" />
+				<entry key="SYSTEM/styles!C5" value="pattern-type:date;pattern:HH:mm" />
+
+				<entry key="SYSTEM/styles!B6" value="short-dateTime" />
+				<entry key="SYSTEM/styles!C6" value="pattern-type:date;pattern:dd-MM-yy HH:mm" />
+
+				<entry key="SYSTEM/styles!B7" value="number" />
+				<entry key="SYSTEM/styles!C7" value="pattern-type:number;pattern:###.##" />
+
+				<entry key="SYSTEM/styles!B8" value="financial" />
+				<entry key="SYSTEM/styles!C8" value="pattern-type:number;pattern:'###.##;(###.##)'" />
+
+				<!-- -->
+				<!-- main -->
+				<!-- <entry key="main/ms!A1" value="10"/> -->
+				<!-- <entry key="main/ms!B1" value="=A1 + 100"/> -->
+				<!-- <entry key="main/ms.summary!A1" value="=ms!B1 + 1000"/> -->
+			</map>
+		</property>
+	</bean>
+
+	<!-- formula parser -->
+	<bean class="org.netxilia.functions.MathFunctions" />
+	<bean class="org.netxilia.functions.TextFunctions" />
+	<bean class="org.netxilia.functions.LogicalFunctions" />
+	<bean class="org.netxilia.functions.DateFunctions" />
+	<bean class="org.netxilia.functions.LookupFunctions" />
+
+	<!-- not ready yet -->
+	<bean class="org.netxilia.functions.ArrayFunctions" />
+	<bean class="org.netxilia.functions.FinancialFunctions" />
+	<bean class="org.netxilia.functions.StatisticalFunctions" />
+
+	<bean id="functionRegistry" class="org.netxilia.api.formula.impl.function.FunctionRegistry" />
+	<bean id="formulaParser" class="org.netxilia.api.formula.impl.JavaCCFormulaParserImpl">
+	</bean>
+
+	<bean id="userService" class="org.netxilia.api.impl.user.UserServiceImpl">
+	</bean>
+
+	<!-- the ACL service for sheets -->
+	<bean id="aclService" class="org.netxilia.api.impl.user.AclServiceImpl">
+	</bean>
+
+	<!-- the dirty cells executor i.e. the service that will update the dependencies 
+		when for exemple the value of a cell changed -->
+	<bean id="dirtyCellJobExecutorService"
+		class="org.netxilia.api.impl.structure.jobs.DirtyCellJobServiceImpl">
+		<property name="dirtyCellThreadCount" value="5" />
+	</bean>
+
+	<bean id="sheetOperations" class="org.netxilia.api.impl.operation.SheetOperationsImpl">
+	</bean>
+
+
+	<!-- the workbook processor -->
+	<bean id="workbookProcessor" class="org.netxilia.api.impl.structure.WorkbookProcessorImpl">
+	</bean>
+
+
+
+	<bean id="jsonSerializer" class="org.netxilia.api.impl.storage.json.GsonSerializerImpl">
+	</bean>
+
+	<bean id="preloadContextFactory"
+		class="org.netxilia.spi.impl.formula.PreloadedFormulaContextFactoryImpl"
+		primary="true">
+	</bean>
+
+	<!-- storage in database -->
+	<import resource="classpath:test-db-schema.xml" />
+	<bean id="ddlUtilsFactory" class="org.netxilia.api.impl.storage.ddl.MockDDLUtilsFactory">
+	</bean>
+
+	<bean id="jdbcTemplateFactory" class="org.netxilia.api.impl.storage.MockJdbcTemplateFactory">
+	</bean>
+
+	<bean id="dataSouceConfigurationService"
+		class="org.netxilia.api.impl.storage.MockDataSourceConfigurationService">
+	</bean>
+
+	<bean id="rowKeyHandler" class="org.netxilia.api.impl.storage.db.DefaultRowKeyHandler">
+	</bean>
+
+	<bean id="matrixMapper" class="org.netxilia.api.impl.storage.db.SparseMatrixMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+	</bean>
+
+	<bean id="cellsMapper" class="org.netxilia.api.impl.storage.db.CellsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="matrixMapper" ref="matrixMapper" />
+	</bean>
+
+	<bean id="columnsMapper" class="org.netxilia.api.impl.storage.db.ColumnsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="columnsTableModel" ref="table-columns" />
+		<property name="matrixMapper" ref="matrixMapper" />
+	</bean>
+
+	<bean id="normalRowsMapper" class="org.netxilia.api.impl.storage.db.NormalRowsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="rowKeyHandler" ref="rowKeyHandler" />
+		<property name="cellsMapper" ref="cellsMapper" />
+		<property name="matrixMapper" ref="matrixMapper" />
+	</bean>
+
+	<bean id="otherRowsMapper" class="org.netxilia.api.impl.storage.db.OtherRowsMapper">
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="rowKeyHandler" ref="rowKeyHandler" />
+		<property name="cellsMapper" ref="cellsMapper" />
+		<property name="matrixMapper" ref="matrixMapper" />
+	</bean>
+
+	<bean id="sheetsMapper" class="org.netxilia.api.impl.storage.db.SheetsMapper">
+		<property name="sheetsTableModel" ref="table-sheets" />
+		<property name="propertiesTableModel" ref="table-properties" />
+		<property name="valuesTableModel" ref="table-values" />
+		<property name="matrixMapper" ref="matrixMapper" />
+		<property name="columnsMapper" ref="columnsMapper" />
+		<property name="normalRowsMapper" ref="normalRowsMapper" />
+		<property name="otherRowsMapper" ref="otherRowsMapper" />
+	</bean>
+
+	<bean id="dbStorageService"
+		class="org.netxilia.api.impl.storage.DbWorkbookStorageServiceImpl">
+		<property name="workbooksMapper">
+			<bean class="org.netxilia.api.impl.storage.db.WorkbooksMapper">
+				<property name="sheetsMapper" ref="sheetsMapper" />
+				<property name="matrixMapper" ref="matrixMapper" />
+				<property name="columnsMapper" ref="columnsMapper" />
+			</bean>
+		</property>
+		<property name="sheetsMapper" ref="sheetsMapper" />
+
+		<property name="columnsMapper" ref="columnsMapper" />
+		<property name="normalRowsMapper" ref="normalRowsMapper" />
+		<property name="otherRowsMapper" ref="otherRowsMapper" />
+		<property name="cellsMapper" ref="cellsMapper" />
+	</bean>
+
+	<!-- the style service for sheets -->
+	<bean id="styleService" class="org.netxilia.api.impl.display.StyleServiceImpl">
+	</bean>
+
+	<bean id="styleRepository" class="org.netxilia.api.impl.display.StyleRepositoryImpl">
+	</bean>
+
+
+
+
+
+</beans>

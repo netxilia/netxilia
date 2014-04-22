@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/exception
+END
+AbandonedCalculationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/exception/AbandonedCalculationException.java
+END
+NotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/369/trunk/api/src/main/java/org/netxilia/api/exception/NotFoundException.java
+END
+AlreadyExistsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/netxilia/code/!svn/ver/369/trunk/api/src/main/java/org/netxilia/api/exception/AlreadyExistsException.java
+END
+IncompleteTaskException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/exception/IncompleteTaskException.java
+END
+StorageException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/369/trunk/api/src/main/java/org/netxilia/api/exception/StorageException.java
+END
+NetxiliaResourceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/exception/NetxiliaResourceException.java
+END
+EvaluationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/exception/EvaluationException.java
+END
+NetxiliaBusinessException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/369/trunk/api/src/main/java/org/netxilia/api/exception/NetxiliaBusinessException.java
+END

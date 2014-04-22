@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<context:annotation-config />
+
+	<bean id="homeResource" class="org.netxilia.server.rest.HomeResource"></bean>
+
+	<bean id="cellResource" class="org.netxilia.server.rest.CellResource"></bean>
+
+	<bean id="eventResource" class="org.netxilia.server.rest.EventResource">
+	</bean>
+
+	<bean id="windowResource" class="org.netxilia.server.rest.WindowResource">
+	</bean>
+
+	<bean id="sheetResource" class="org.netxilia.server.rest.SheetResource">
+		<property name="jsonExportService" ref="expJson"/>
+	</bean>
+
+	<bean id="styleResource" class="org.netxilia.server.rest.StyleResource">
+	</bean>
+
+	<bean id="rowResource" class="org.netxilia.server.rest.RowResource">
+	</bean>
+
+	<bean id="columnResource" class="org.netxilia.server.rest.ColumnResource">
+	</bean>
+
+	<bean id="workbookResource" class="org.netxilia.server.rest.WorkbookResource">
+		<property name="excelImportService" ref="impExcel"/>
+		<property name="jsonImportService" ref="impJson"/>
+	</bean>
+
+	<bean id="userResource" class="org.netxilia.server.rest.UserResource">
+	</bean>
+
+	<bean id="adminResource" class="org.netxilia.server.rest.AdminResource">
+		<property name="authenticationManager" ref="authenticationManager" />
+	</bean>
+
+	<bean id="chartResource" class="org.netxilia.server.rest.ChartResource">
+	</bean>
+
+	<bean id="dataSourceResource" class="org.netxilia.server.rest.DataSourceResource">
+	</bean>
+
+	<bean id="formatterResource" class="org.netxilia.server.rest.FormatterResource">
+	</bean>
+	
+	<bean id="restResourceRegistry" class="org.netxilia.jaxrs.js.ResourceRegistry" />
+
+	<bean id="restJavascriptClient" class="org.netxilia.jaxrs.js.RESTJavascriptClient" />
+
+	<bean id="restBeanProcessor" class="org.netxilia.jaxrs.js.SpringBeanProcessor" />
+
+
+	<!--  providers -->
+	<bean id="notFoundExceptionMapper"
+		class="org.netxilia.server.rest.provider.NotFoundExceptionMapper"
+		scope="singleton">
+	</bean>
+
+
+	<bean id="accessControlExceptionMapper"
+		class="org.netxilia.server.rest.provider.AccessControlExceptionMapper"
+		scope="singleton">
+	</bean>
+	
+	<bean id="paramConversionExceptionMapper"
+		class="org.netxilia.server.rest.provider.ParamConversionExceptionMapper"
+		scope="singleton">
+	</bean>
+	
+	<bean id="illegalArgumentExceptionMapper"
+		class="org.netxilia.server.rest.provider.IllegalArgumentExceptionMapper"
+		scope="singleton">
+	</bean>
+
+	<bean id="jsonProvider" class="org.netxilia.server.rest.provider.JsonProvider"
+		scope="singleton" />
+
+	<bean id="sheetPdfProvider" class="org.netxilia.server.rest.pdf.SheetPdfProvider"
+		scope="singleton">
+	</bean>
+	<bean id="sheetExcelProvider" class="org.netxilia.server.rest.xls.SheetExcelProvider"
+		scope="singleton">
+		<property name="exportService" ref="expExcel"/>
+	</bean>
+
+	<bean id="htmlProvider" class="org.netxilia.jaxrs.html.HTMLProvider"
+		scope="singleton">
+		<property name="interceptors">
+			<list>
+				<bean class="org.netxilia.server.rest.html.GenericHTMLProviderInterceptor" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

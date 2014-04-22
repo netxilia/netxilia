@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- the formatting service -->
+	<context:annotation-config />
+
+	<!-- parsers -->
+	<bean id="valueParserService" class="org.netxilia.api.impl.value.GenericValueParseServiceImpl">
+	</bean>
+	
+	<bean id="booleanParser" class="org.netxilia.api.impl.value.BooleanParser">
+	</bean>
+	<bean id="numberParser" class="org.netxilia.api.impl.value.NumberParser">
+	</bean>
+	<bean id="dateParser" class="org.netxilia.api.impl.value.DateTimeParser">
+		<property name="datePatterns">
+			<array>
+				<value>dd MM yy</value>
+				<value>dd MM yyyy</value>
+				<value>dd MMM yyyy</value>
+				<value>d MMM yy</value>
+	            <value>yyyy M d</value>
+	            <value>yyyy MMM d</value>
+	          </array>
+	     </property>
+	     <property name="timePatterns">
+	    	<array>
+				<value>HH:mm:ss</value>
+				<value>HH:mm</value>
+			</array>
+		</property>
+	</bean>
+
+	<!-- formatters -->
+	<!-- IMPORTANT: the formatters have to be prototype and the name should use the prefix used by the 
+	styleRepository (formatter-). The name (after removing the prefix) is the one used on the web in the pattern-type attribute  -->
+	<bean id="formatter-boolean" class="org.netxilia.api.impl.format.BooleanFormatter" scope="prototype"/>
+	
+	<bean id="formatter-number" class="org.netxilia.api.impl.format.NumberFormatter" scope="prototype" init-method="init">
+		<property name="locale" value="en_US"/>
+	</bean>
+
+	<bean id="formatter-date" class="org.netxilia.api.impl.format.DateFormatter" scope="prototype"/>
+
+	<bean id="formatter-currency" class="org.netxilia.api.impl.format.CurrencyFormatter" scope="prototype" init-method="init"/>
+
+	<bean id="formatter-enum" class="org.netxilia.api.impl.format.EnumerationFormatter" scope="prototype"/>
+
+	<bean id="formatter-text" class="org.netxilia.api.impl.format.TextFormatter" scope="prototype"/>
+		
+	<bean id="formatter-values" class="org.netxilia.api.impl.format.SheetValueListFormatter" scope="prototype"/>
+	
+	<bean id="formatter-checkbox" class="org.netxilia.api.impl.format.CheckboxFormatter" scope="prototype"/>
+			
+</beans>

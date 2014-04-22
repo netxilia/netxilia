@@ -1,0 +1,1 @@
+java -jar start.jar -Djetty.home=. lib=deploy/lib

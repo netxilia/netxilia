@@ -1,0 +1,160 @@
+/** 
+ These are the styles used by the menu items and toolbar 
+*/
+/************************************************************/
+
+
+/************************************************************/
+
+div.toolbar {
+	background-color:#eee;
+	height:36px;
+	border-top: 1px solid #8D8EC5;
+}
+
+
+ul.toolbar {
+	list-style-position: inside;
+	padding: 0px;
+}
+
+ul.toolbar li{
+	list-style: none;
+	float: left;
+
+	width:21px;
+	height:21px;
+	margin: 5px 1px 5px 1px;
+	background-image: url(img/icons.gif);
+	background-repeat: no-repeat;
+	
+	cursor:pointer;
+	border:solid 1px #eee;
+}
+ul.toolbar li.disabled {
+	opacity: 0.33;
+}
+ul.toolbar li.active {
+	background-color: #ddd;
+	border:solid 1px #999;
+}
+ul.toolbar li.autoWidth{
+	width:auto;
+	background-image: none;
+}
+
+ul.toolbar li.dropdown{
+	width:auto;
+	background: url(dropdown.gif) center right no-repeat;
+	padding-right:15px;
+	font-size: 12pt; 
+	vertical-align: baseline;
+}
+
+ul.toolbar li.separator {
+	background: #ddd;
+	width: 4px;
+	font-size: 1px;
+}
+
+
+
+.menu-popup {
+	display:none;
+	position: absolute;
+	z-index: 200;
+	background-color: white;
+	border: solid #333399 1px;
+}
+.menu-popup table{
+	border-collapse: collapse;
+	margin: 10px;
+}
+
+.menu-popup td {
+	width:16px;
+	height:16px;
+	border: solid #eee 1px;
+	cursor: pointer;
+}
+
+.menu-popup ul{
+	padding: 10px;
+	margin: 2px;
+}
+.menu-popup li {
+	cursor: pointer;
+	list-style: none;
+}
+
+/************************************************************/
+.ToolIcon_print			{ background-position: -336px 0px }
+.ToolIcon_redo			{ background-position: -453px 0px }
+.ToolIcon_undo			{ background-position: -474px 0px }
+.ToolIcon_cut			{ background-position: -231px 0px }
+.ToolIcon_copy			{ background-position: -252px 0px }
+.ToolIcon_paste			{ background-position: -273px 0px }
+
+.ToolIcon_bold			{ background-position: -2px 0px }
+.ToolIcon_italic		{ background-position: -25px 0px }
+.ToolIcon_underline		{ background-position: -48px 0px }
+.ToolIcon_strikethrough { background-position: -562px 0px }
+
+.ToolIcon_alignleft		{ background-position: -69px 0px }
+.ToolIcon_aligncenter	{ background-position: -89px 0px }
+.ToolIcon_alignright	{ background-position: -109px 0px }
+.ToolIcon_alignjustify	{ background-position: -129px 0px }
+
+.ToolIcon_wordwrap		{ background-position: -427px 0px }
+.ToolIcon_cellcolor		{ background-position: -670px 0px }
+.ToolIcon_fontcolor		{ background-position: -315px 0px }
+.ToolIcon_border		{ background-position: -540px 0px }
+.ToolIcon_clearFormatting	{ background-position: -293px 0px }
+.ToolIcon_formatting	{ background-position: -843px 0px }
+
+.ToolIcon_mergecells	{ background-position: -582px 0px }
+.ToolIcon_insertrow		{ background-position: -150px 0px }
+.ToolIcon_autoinsertrow	{ background-position: -691px 0px }
+.ToolIcon_deleterow		{ background-position: -168px 0px }
+.ToolIcon_insertcol		{ background-position: -189px 0px }
+.ToolIcon_deletecol		{ background-position: -210px 0px }
+
+.ToolIcon_find			{ background-position: -386px 0px }
+.ToolIcon_filter 		{ background-position: -607px 0px}
+.ToolIcon_filterFormula { background-position: -626px 0px}
+.ToolIcon_sort			{ background-position: -495px 0px }
+.ToolIcon_tree 			{ background-position: -650px 0px }
+.ToolIcon_alias 		{ background-position: -406px 0px }
+.ToolIcon_chart			{ background-position: -518px 0px }
+.ToolIcon_privateNotes	{ background-position: -860px 0px }
+
+
+/* borders */
+.ToolIcon_borderAround		{ background-position: -713px -3px }
+.ToolIcon_borderNone		{ background-position: -730px -3px }
+.ToolIcon_borderBetween	{ background-position: -745px -3px }
+.ToolIcon_borderAll		{ background-position: -761px -3px }
+
+.ToolIcon_borderTop		{ background-position: -778px -3px }
+.ToolIcon_borderBottom		{ background-position: -794px -3px }
+.ToolIcon_borderLeft		{ background-position: -810px -3px }
+.ToolIcon_borderRight		{ background-position: -825px -3px }
+
+
+
+
+#borders-popup td{
+	background-image: url(img/icons.gif);
+	background-repeat: no-repeat;
+	padding: 1px;
+	border: 0px;
+}
+
+#fontSizes-popup {
+	text-align: right;
+}
+
+#foreground-popup td{
+	font-weight: bold;
+	text-align:center;
+}

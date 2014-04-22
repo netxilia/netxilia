@@ -1,0 +1,6 @@
+jdbc.driver=org.postgresql.Driver
+jdbc.url=jdbc:postgresql://localhost/teamsheet?
+
+jdbc.username=teamsheet
+jdbc.password=ts
+jdbc.name=Postgres example

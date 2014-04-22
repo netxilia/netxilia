@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/netxilia/code/!svn/ver/396/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl
+END
+DDLReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/396/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/DDLReader.java
+END
+ExtendedDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/ExtendedDataSource.java
+END
+DDLUtilsFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/DDLUtilsFactoryImpl.java
+END
+DDLWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/DDLWriter.java
+END
+DDLUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/DDLUtils.java
+END
+IDDLUtilsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/IDDLUtilsFactory.java
+END

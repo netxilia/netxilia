@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+
+	<beans:bean id="exceptionTranslationFilter"
+		class="org.netxilia.server.security.ExcludeAjaxExceptionTranslationFilter">
+		<!--
+			<beans:property name="authenticationEntryPoint"
+			ref="authenticationProcessingFilterEntryPoint" />
+		-->
+	</beans:bean>
+
+	<http auto-config="false">
+		<intercept-url pattern="/secure/**" access="IS_AUTHENTICATED_REMEMBERED" />
+
+		<intercept-url pattern="/rest/users/login" access="IS_AUTHENTICATED_ANONYMOUSLY"
+			filters="none" />
+		<intercept-url pattern="/rest/admin/init" access="IS_AUTHENTICATED_ANONYMOUSLY"
+			filters="none" />
+		<intercept-url pattern="/rest/admin/create" access="IS_AUTHENTICATED_ANONYMOUSLY"
+			filters="none" />
+		<intercept-url pattern="/rest/admin/**" access="ROLE_ADMIN"
+			filters="none" />
+
+		<!--		<form-login login-page="/rest/users/login"/>-->
+
+		<!--
+			Disable web URI authorization, as we're using
+			<global-method-security> and have @Secured the services layer instead
+			<intercept-url pattern="/listAccounts.html"
+			access="IS_AUTHENTICATED_REMEMBERED" /> <intercept-url
+			pattern="/post.html" access="ROLE_TELLER" />
+		-->
+		<intercept-url pattern="/rest/**" access="ROLE_USER,ROLE_ADMIN" />
+
+		<custom-filter after="EXCEPTION_TRANSLATION_FILTER"
+			ref="exceptionTranslationFilter" />
+			
+		<form-login login-page="/rest/users/login"/>
+		<logout />
+		<remember-me />
+	</http>
+
+
+
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref='userService' />
+	</authentication-manager>
+
+	<!--
+		<authentication-provider user-service-ref='userService'/>
+	-->
+
+	<!--	<bean id="authenticationProcessingFilterEntryPoint"-->
+	<!--
+		class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
+	-->
+	<!--		<property name="loginFormUrl" value="/rest/users/login" />-->
+	<!--		<property name="forceHttps" value="false" />-->
+	<!--	</bean>-->
+
+</beans:beans>

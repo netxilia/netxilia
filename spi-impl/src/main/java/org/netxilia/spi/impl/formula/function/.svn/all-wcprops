@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/netxilia/code/!svn/ver/374/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/formula/function
+END
+FunctionRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/formula/function/FunctionRegistry.java
+END
+IFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/netxilia/code/!svn/ver/369/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/formula/function/IFunction.java
+END
+MethodWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/369/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/formula/function/MethodWrapper.java
+END
+LazyGenericValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/netxilia/code/!svn/ver/369/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/formula/function/LazyGenericValue.java
+END
+ParameterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/netxilia/code/!svn/ver/374/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/formula/function/ParameterIterator.java
+END

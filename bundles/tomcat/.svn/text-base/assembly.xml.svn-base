@@ -1,0 +1,35 @@
+<assembly>
+	<id>bin</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<files>
+		<file>
+			<source>target/${project.artifactId}-${project.version}.war</source>
+			<destName>webapps/netxilia.war</destName>
+		</file>
+	</files>
+	<fileSets>
+		<fileSet>
+			<directory>target/jetty/${jetty.artifactId}-${jetty.version}</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>**</include>
+			</includes>
+			<excludes>
+				<exclude>**/test.war</exclude>
+				<exclude>contexts-available</exclude>
+				<exclude>contexts/**</exclude>
+				<exclude>etc/jetty.xml</exclude>
+			</excludes>
+		</fileSet>
+		
+		<fileSet>
+			<directory>src/main/jetty</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>**</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

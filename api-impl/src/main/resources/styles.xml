@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+
+	<context:annotation-config />
+
+	<util:list id="colors">
+		<value>000000</value>
+		<value>333333</value>
+		<value>808080</value>
+		<value>969696</value>
+		<value>c0c0c0</value>
+		<value>dddddd</value>
+		<value>ffffff</value>
+		<value>ff0000</value>
+		<value>ff9900</value>
+		<value>99cc00</value>
+		<value>339966</value>
+		<value>33cccc</value>
+		<value>3366ff</value>
+		<value>800080</value>
+		<value>ff00ff</value>
+		<value>ffcc00</value>
+		<value>ffff00</value>
+		<value>00ff00</value>
+		<value>00ffff</value>
+		<value>00ccff</value>
+		<value>993366</value>
+		<value>ff99cc</value>
+		<value>fadcb3</value>
+		<value>ffff99</value>
+		<value>ccffcc</value>
+		<value>ccffff</value>
+		<value>c2d1f0</value>
+		<value>e1c7e1</value>
+		<value>e69999</value>
+		<value>ffcc99</value>
+		<value>ebd780</value>
+		<value>b3d580</value>
+		<value>bde6e1</value>
+		<value>99ccff</value>
+		<value>cc99ff</value>
+		<value>ff0000</value>
+		<value>ff6600</value>
+		<value>808000</value>
+		<value>008000</value>
+		<value>008080</value>
+		<value>0000ff</value>
+		<value>6666cc</value>
+		<value>800000</value>
+		<value>993300</value>
+		<value>333300</value>
+		<value>003300</value>
+		<value>003366</value>
+		<value>000080</value>
+		<value>333399</value>
+	</util:list>
+
+	<bean class="org.netxilia.api.impl.display.StyleServiceImpl"
+		init-method="init">
+
+		<property name="styleDefinitions">
+			<list>
+				<value>b=font-weight: bold;</value>
+				<value>i=font-style: italic;</value>
+				<value>u=text-decoration: underline;</value>
+				<value>s=font-weight: line-through;</value>
+				<value>wp=white-space: nowrap; overflow: hidden;</value>
+
+				<!-- borders - not mutual exclusive -->
+				<value>bl=border-left: solid 1px black;</value>
+				<value>br=border-right: solid 1px black;</value>
+				<value>bt=border-top: solid 1px black;</value>
+				<value>bb=border-bottom: solid 1px black;</value>
+				
+				<!-- align -->
+				<value>a-l=text-align: left;</value>
+				<value>a-c=text-align: center;</value>
+				<value>a-r=text-align: right;</value>
+				<value>a-j=text-align: justify;</value>
+			</list>
+		</property>
+
+		<property name="generators">
+			<list>
+				<!-- font sizes -->
+				<bean class="org.netxilia.api.impl.display.CSSStyleDefinitionGenerator">
+					<property name="group" value="fs" />
+					<property name="namePattern" value="$1" />
+					<property name="definitionPattern" value="font-size: $1pt;" />
+					<property name="replacementsAsString"
+						value="6;8;9;10;11;12;14;16;18;20;22;24;26;28;36;48;72" />
+				</bean>
+				
+				<!-- foregrounds -->
+				<bean class="org.netxilia.api.impl.display.CSSStyleDefinitionGenerator">
+					<property name="group" value="fg" />
+					<property name="namePattern" value="$1" />
+					<property name="definitionPattern" value="color: #$1;" />
+					<property name="replacements" ref="colors"/>
+				</bean>		
+				
+				<!-- backgrounds -->
+				<bean class="org.netxilia.api.impl.display.CSSStyleDefinitionGenerator">
+					<property name="group" value="bg" />
+					<property name="namePattern" value="$1" />
+					<property name="definitionPattern" value="background-color: #$1;" />
+					<property name="replacements" ref="colors"/>
+				</bean>				
+			</list>
+
+
+
+
+		</property>
+
+	</bean>
+
+
+</beans>

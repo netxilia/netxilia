@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect
+END
+ISqlDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/ISqlDialect.java
+END
+H2Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/H2Dialect.java
+END
+SqlDialectProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/SqlDialectProvider.java
+END
+AbstractSqlDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/AbstractSqlDialect.java
+END
+PostgreSQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/PostgreSQLDialect.java
+END
+DerbyDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/DerbyDialect.java
+END
+MySQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/dialect/MySQLDialect.java
+END

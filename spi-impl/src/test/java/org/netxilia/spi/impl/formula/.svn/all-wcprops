@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/formula
+END
+TestFindAndFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/formula/TestFindAndFilter.java
+END
+TestAliases.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/formula/TestAliases.java
+END
+TestCellCommands.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/formula/TestCellCommands.java
+END
+TestFormulaParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/formula/TestFormulaParser.java
+END

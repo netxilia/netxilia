@@ -1,0 +1,29 @@
+
+
+check same methods name in parents too
+
+-- done
+ajaxParams.beforeSend
+$properties/$object
+$prototype/$constructor
+prototype
+added JQueryXHR
+added Browser
+tabs-options
+ String.charCodeAt
+ String.fromCharCode
+ array[] iteration / check no array used
+ regexp.exec() returns string or array or a special object?
+ element.scrollHeight
+$map cu ? extends Object
+clean callbacks (Runnable -> Callback0)
+add sources with maven
+
+
+--------------
+fix jquery plugins impl
+jquery plugins
+nx.splitter.js
+nx.table.js
+nx.threeColumn.js
+

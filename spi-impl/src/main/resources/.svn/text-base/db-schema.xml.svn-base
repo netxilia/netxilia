@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<!--
+		=========================== Main DB Schema ===========================
+	-->
+
+
+	
+	<!--
+		Define the properties table, one per sheet (or more for private and
+		summary sheets). Each table contains the sheet's, rows, columns and
+		cells properties
+	-->
+	<bean id="table-properties" class="org.netxilia.spi.impl.storage.db.ddl.schema.DbTable">
+		<!-- full name is props_${workbook}_${sheet} -->
+		<property name="name" value="_props" />
+		<property name="columns">
+			<util:list>
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="sheet_id" />
+					<property name="dataType" value="INTEGER" />
+					<property name="primaryKey" value="true" />
+				</bean>
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="category" />
+					<property name="dataType" value="VARCHAR" />
+					<property name="size" value="55" />
+					<property name="primaryKey" value="true" />
+				</bean>
+
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="object" />
+					<property name="dataType" value="VARCHAR" />
+					<property name="size" value="150" />
+					<property name="primaryKey" value="true" />
+				</bean>
+
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="property" />
+					<property name="dataType" value="VARCHAR" />
+					<property name="size" value="55" />
+					<property name="primaryKey" value="true" />
+				</bean>
+
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="value" />
+					<property name="dataType" value="VARCHAR" />
+					<property name="size" value="150" />
+				</bean>
+				
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="big_value" />
+					<property name="dataType" value="CLOB" />
+				</bean>
+			</util:list>
+		</property>
+	</bean>
+
+
+	<bean id="table-values" class="org.netxilia.spi.impl.storage.db.ddl.schema.DbTable">
+		<!-- full name is data_${workbook}_${sheet} -->
+		<property name="name" value="_data" />
+		<property name="columns">
+			<util:list>
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="id" />
+					<property name="dataType" value="INTEGER" />
+					<property name="primaryKey" value="true" />
+				</bean>
+
+				<!-- SHOULD create an index on this column -->
+				<bean class="org.netxilia.spi.impl.storage.db.ddl.schema.DbColumn">
+					<property name="name" value="order_by" />
+					<property name="dataType" value="DECIMAL" />
+					<property name="nullable" value="false" />
+					<property name="size" value="30" />
+					<property name="scale" value="15" />
+				</bean>
+			</util:list>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,439 @@
+
+.sheetEditor {
+	height:100%;
+	width:100%;
+	clear:both;
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+
+.sheetContainer {
+	border:solid 1px #ddd;
+	width:100%;
+}
+
+.threeColumnFixed div.col1wrap, 
+.threeColumnFixed div.col1,
+.threeColumnFixed div.colleft, 
+.threeColumnFixed div.colmid,
+.threeColumnFixed div.col2,
+.threeColumnFixed div.col3 
+  {
+	height:100%;
+}
+
+
+/** cells */
+table.cells {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table.cells td {
+	border: solid 1px #D6D6E3;
+	font-size: 13px;
+	padding: 0px 2px;
+	overflow: hidden;
+}
+
+table.cells.read-only  {
+	background-color: #ddd;
+}
+
+table.cells td.tree {
+	background: url(img/minus.gif) no-repeat center left;
+	cursor: pointer;
+	padding-left: 15px;
+}
+
+table.cells td.collapsed{
+	background: url(img/plus.gif) no-repeat center left;
+}
+
+tr.collapsed {
+	display: none;
+}
+
+table.cells td.formula {
+	background-color: yellow;
+}
+/* fixed cols */
+table.cells tbody th{
+	text-align: center;
+	font-size: 13px;
+	padding-right: 7px;
+	border: solid 1px #8d8ec5;
+	background: #ababd3;
+	width: 60px;
+	color: #2f2e84;
+	cursor:pointer;
+}
+table.cells th.sel {
+	background-color: #ebddd4;
+}
+
+/** fixed rows*/
+
+table.fixedRows {
+	margin-right:20px;	
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table.fixedRows th {
+	border: solid 1px #8d8ec5;
+	background-color: #ababd3;
+	text-align: center;
+	padding: 3px 2px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #2f2e84;
+	cursor: pointer;
+}
+
+table.fixedRows tr.labels th.ref {
+	width:60px;
+}
+table.fixedRows tr.aliases th {
+	background-color: #ebddd4;
+}
+table.fixedRows tr.aliases th {
+	padding:1px 0px 1px 0px;
+}
+table.fixedRows tr.aliases th input {
+	border:none;
+	padding: 0px;
+	margin: 0px;
+	width:100%;
+	background-color: #ebddd4;
+	text-align: center;
+}
+
+table.fixedRows th.sel {
+	background-color: #ebddd4;
+}
+/** rh and cw */
+table.cells tr.cw td, table.cells tr.cw th {
+	padding:0px 2px;
+	font-size: 1px;
+	overflow: hidden;
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+
+table.cells tr.cw td p, table.cells tr.cw th p {
+	height: 0;
+}
+table.cells tr.cw{
+	height:0;
+}
+
+table.cells td .merge {
+	position:relative;
+}
+/* position must be in line with cellsDiv */
+
+div.cellsDiv {
+	overflow-y: auto;
+	overflow-x: hidden; 
+	bottom:18px;
+	top:44px;
+	width:100%;
+	position:absolute;	
+}
+
+.summaryCells div.cellsDiv{
+	bottom:0px;
+}
+div.horizSheetScroll {
+	bottom:0;
+	overflow:auto;
+	position:absolute;
+	width:100%;
+	height:18px;
+	margin-bottom: 4px;
+}
+
+
+
+/** pager **/
+.pager {
+	background-color: #fff;
+}
+
+.pager table {
+	border-collapse: collapse;
+	margin-top:50px;
+}
+
+.pager table th {
+	background-color:#ABABD3;
+	border:1px solid #8D8EC5;
+	color:#2F2E84;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.pager table td {
+	border: solid 1px #ddd;
+	cursor:pointer;
+	text-align:right;
+	font-size:13px;
+}
+
+.pager table tr.crt td {
+	background-color: #ebddd4;
+}
+/* main cells */
+.mainCells {
+	position:absolute;
+	top:0px;
+	bottom: 120px;
+	width:100%;
+}
+
+.mainCells .threeColumnFixed{
+	height:100%;
+}
+
+/** summary cells */
+.summaryCells {
+	position:absolute;
+	height:120px;
+	bottom:0px;
+	width:100%;
+}
+.summaryCells .threeColumnFixed{
+	height:100%;
+}
+
+.summaryCells .cellsDiv {
+	overflow-x: hidden;
+	top:0px;
+}
+
+.summaryCells div.fixedColsDiv {
+	top:0px;
+}
+
+.no-overflow {
+	overflow: hidden !important;
+}
+/** private cells */
+.privateCells {
+	height:100%;
+	cursor:default;
+}
+
+.privateCells .threeColumnFixed{
+	height:100%;
+}
+
+
+/* tabs */
+div.tabs div.tab{
+	position:absolute;
+	top:30px;
+	bottom:5px;
+	width:100%;
+	left:10px;
+}
+.sheetEditor .ui-tabs-nav {
+	margin-left:10px;
+}
+/** border layout */
+.center, .east, .west, .north, .south {
+	display: inline-block;
+}
+
+#selectedArea {
+	background-color: #ebddd4;
+	position: absolute;
+}
+
+#default-editor,#selector,.selector-other, #date-editor {
+	position: absolute;
+	border: solid 1px black;
+	padding: 0px 0px;
+	font-size: 0.8em;
+	overflow: hidden;
+}
+
+.selector-other {
+	border-color: blue;
+}
+
+#formulaTip {
+	position: absolute;
+	border: solid 1px black;
+	padding: 0px 1px;
+	background-color: #F8F884;
+	font-size: 0.8em;
+}
+
+#default-editor,#date-editor {
+	background-color: #EBDDD4;
+	font-size: 13px;
+	font-family: arial;
+}
+
+#replicator {
+	position: absolute;
+	background: black;
+	width: 7px;
+	height: 7px;
+	border: solid 1px #fff;
+	cursor: pointer;
+	font-size: 1px;
+}
+
+/* resizers */
+#colResizer,#rowResizer {
+	position: absolute;
+	background-color: #666;
+	font-size: 1px;
+	display: none;
+}
+
+#colResizer {
+	width: 8px;
+	cursor: col-resize;
+	top: 0px;
+}
+
+#rowResizer {
+	height: 5px;
+	cursor: row-resize;
+}
+
+
+/**
+ z-index order (from down to up)
+- editor hidden
+- selectedArea
+- sheetContainer / table
+- selector
+- editor Visible
+- replicator
+*/
+.sheetContainer {
+	z-index: 0;
+}
+
+.editor-visible-index {
+	z-index: 301;
+}
+
+.ui-datepicker {
+	font-size: 0.7em;
+	z-index: 301;
+}
+
+.datepicker {
+	font-size: 0.7em;
+	z-index: 301;
+}
+
+#selectedArea {
+	z-index: -10;
+}
+
+#selector, .selector-other {
+	z-index: 30;
+}
+
+#replicator {
+	z-index: 40;
+}
+
+#formulaTip {
+	z-index: 50;
+}
+
+#colResizer,#rowResizer {
+	z-index: 50;
+}
+
+#selectionContent {
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	width:0px;
+	height: 0px;
+	overflow: scroll;
+	border:none;
+	z-index: -20;
+}
+
+
+
+#select-editor {
+	position:absolute;
+}
+
+.multiSelectOptions {
+	background-color:#eee;
+	border:solid 1px #ccc;
+}
+.multiSelectOptions label{
+	display: block;
+}
+/******** dialogs ***********/
+#dialogs {
+	display:none;
+}
+
+#aliases #aliasDefinitions label {
+	width:40px;
+	display:inline-block;
+}
+#aliases #aliasDefinitions input {
+	width:70px;
+}
+
+#styles #selectedStyles.partial {
+	color: gray;
+}
+
+.ui-dialog li {
+	white-space: nowrap;
+}
+
+.ui-dialog label {
+	width: 150px;
+	display: inline-block;
+}
+/************ date picker **********/
+.datepicker { border-collapse: collapse; border: 2px solid #999; position: absolute; }
+.datepicker tr.controls th { height: 22px; font-size: 11px; }
+.datepicker select { font-size: 11px; }
+.datepicker tr.days th { height: 18px; }
+.datepicker tfoot td { height: 18px; text-align: center; text-transform: capitalize; }
+.datepicker th, .datepicker tfoot td { background: #eee; font: 10px/18px Verdana, Arial, Helvetica, sans-serif; }
+.datepicker th span, .datepicker tfoot td span { font-weight: bold; }
+
+.datepicker tbody td { width: 24px; height: 24px; border: 1px solid #ccc; font: 11px/22px Arial, Helvetica, sans-serif; text-align: center; background: #fff; }
+.datepicker tbody td.date { cursor: pointer; }
+.datepicker tbody td.date.over { background-color: #99ffff; }
+.datepicker tbody td.date.chosen { font-weight: bold; background-color: #ccffcc; }
+
+/************ chart **********/
+.chart {
+	position:absolute !important;
+	z-index: 100;
+	padding: 20px;
+	background-color: #eee;
+	border: solid 1px #999;
+	cursor: move;
+}
+.chart .chart-menu {
+	text-align: right;
+	margin-bottom: 5px;
+}
+
+.chart .chart-area {
+	float:left;
+}
+

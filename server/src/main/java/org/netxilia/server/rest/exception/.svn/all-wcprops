@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/rest/exception
+END
+RedirectionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/rest/exception/RedirectionException.java
+END
+SystemNotInitializedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/netxilia/code/!svn/ver/289/trunk/server/src/main/java/org/netxilia/server/rest/exception/SystemNotInitializedException.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/netxilia/code/!svn/ver/426/trunk/api-impl/src/main/java/org/netxilia/api/impl/user
+END
+NetxiliaSecurityContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/netxilia/code/!svn/ver/392/trunk/api-impl/src/main/java/org/netxilia/api/impl/user/NetxiliaSecurityContext.java
+END
+ISpringUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/377/trunk/api-impl/src/main/java/org/netxilia/api/impl/user/ISpringUserService.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/netxilia/code/!svn/ver/396/trunk/api-impl/src/main/java/org/netxilia/api/impl/user/UserServiceImpl.java
+END
+AclServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/426/trunk/api-impl/src/main/java/org/netxilia/api/impl/user/AclServiceImpl.java
+END
+SpringUserAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/netxilia/code/!svn/ver/371/trunk/api-impl/src/main/java/org/netxilia/api/impl/user/SpringUserAdapter.java
+END

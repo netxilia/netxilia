@@ -1,0 +1,16 @@
+log4j.rootCategory=info, A1
+
+# A1 is set to be a ConsoleAppender. 
+log4j.appender.A1=org.apache.log4j.ConsoleAppender
+
+log4j.appender.A2=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.A2.File=${java.io.tmpdir}/nx.log
+log4j.appender.A2.DatePattern='.'yyyy-MM-dd
+
+# A1 uses PatternLayout.
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+log4j.appender.A1.layout.ConversionPattern=[%d{dd-MM HH:mm:ss.SSS}] %-5p  [%t] [%c{1}] - %m%n
+
+log4j.category.net.sourceforge.stripes=info
+
+

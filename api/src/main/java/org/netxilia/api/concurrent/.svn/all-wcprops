@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/netxilia/code/!svn/ver/419/trunk/api/src/main/java/org/netxilia/api/concurrent
+END
+IActor.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/concurrent/IActor.java
+END
+IListenableFuture.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/netxilia/code/!svn/ver/419/trunk/api/src/main/java/org/netxilia/api/concurrent/IListenableFuture.java
+END
+LRUCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/concurrent/LRUCache.java
+END
+IFutureListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/384/trunk/api/src/main/java/org/netxilia/api/concurrent/IFutureListener.java
+END
+NetxiliaListenableFutureAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/netxilia/code/!svn/ver/419/trunk/api/src/main/java/org/netxilia/api/concurrent/NetxiliaListenableFutureAdapter.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage
+END
+MockConnectionWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/MockConnectionWrapper.java
+END
+TestDbStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/TestDbStorage.java
+END
+MockDataSourceConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/p/netxilia/code/!svn/ver/402/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/MockDataSourceConfigurationService.java
+END
+MockConnectionWrapperFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/MockConnectionWrapperFactory.java
+END
+TestCachedDbStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/netxilia/code/!svn/ver/426/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/TestCachedDbStorage.java
+END
+TestDatasourceConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/netxilia/code/!svn/ver/424/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/TestDatasourceConfiguration.java
+END

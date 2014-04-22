@@ -1,0 +1,344 @@
+.container {
+	height:100%;
+} 
+
+.threeColumnFixed div.col1wrap, 
+.threeColumnFixed div.col1,
+.threeColumnFixed div.colleft, 
+.threeColumnFixed div.colmid,
+.threeColumnFixed div.col2,
+.threeColumnFixed div.col3 
+  {
+	height:100%;
+	background-color: white;
+}
+
+div.content {
+	bottom: 2px !important; /* no footer in home page*/
+}
+
+#display {
+	height:95%;
+}
+.menus {
+	/*background-image: url(img/menu_BG_copie.gif); EBDDD4*/
+	background-color:#eee;
+	height:36px;
+	border-top: 1px solid #8D8EC5;
+	border-bottom: 1px solid #8D8EC5;
+	margin:1px;
+}
+
+.menus div{
+	padding:10px;
+	display:none;
+}
+
+.menus a{
+	padding:0 10px ;
+}
+
+#dialogs {
+	display:none;
+}
+
+/** treeview **/
+div.treeview-container{
+	height:100%;
+	overflow: auto;
+	margin-right:5px;
+}
+
+.treeview {
+	border-top: 1px solid #8D8EC5;
+}
+.treeview .error{
+	color: red;
+}
+
+.treeview span{
+	cursor:pointer;
+	margin-left: 4px;
+}
+
+.treeview li.selected{
+	background-color:#EBDDD4;
+}
+
+.treeview li.expandable span.datasources, .treeview li.collapsable span.datasources { 
+	background: url(img/datasources.png) 0 0 no-repeat; 
+	padding-left: 19px;
+}
+
+.treeview span.datasource { 
+	background: url(img/datasource.png) 0 0 no-repeat; 
+	padding-left: 19px;
+}
+
+.treeview span.modules { 
+	background: url(img/module2.png) 0 0 no-repeat; 
+	padding-left: 19px;
+}
+
+.treeview span.build { 
+	background: url(img/build2.png) 0 0 no-repeat; 
+	padding-left: 19px;
+}
+
+.treeview span.sheet { 
+	background: url(img/sheet.gif) 0 0 no-repeat; 
+	padding-left: 19px;
+}
+.treeview li.expandable span.admin, .treeview li.collapsable span.admin { 
+	background: url(img/settings.png) 0 0 no-repeat; 
+	padding-left: 19px;
+	font-weight:bold;
+}
+
+.treeview li.collapsable span.workbook { 
+	background: url(img/workbook-opened.png) 0 0 no-repeat; 
+	padding-left: 19px;
+	font-weight:bold;
+}
+
+.treeview li.expandable span.workbook, .treeview li span.workbook { 
+	background: url(img/workbook.png) 0 0 no-repeat; 
+	padding-left: 19px;
+	font-weight:bold;
+}
+
+#display {
+	position:relative;
+	overflow: auto;
+}
+
+/** for sheet overview */
+/** cells */
+table.cells {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table.cells td {
+	border: solid 1px #ddd;
+	font-size: 13px;
+	padding: 0px 2px;
+	overflow: hidden;
+}
+
+table.cells td.tree {
+	background: url(img/minus.gif) no-repeat center left;
+	cursor: pointer;
+	padding-left: 15px;
+}
+
+table.cells td.collapsed{
+	background: url(img/plus.gif) no-repeat center left;
+}
+
+tr.collapsed {
+	display: none;
+}
+
+/* fixed cols */
+table.cells tbody th{
+	text-align: center;
+	font-size: 13px;
+	padding-right: 7px;
+	border: solid 1px #8d8ec5;
+	background: #ababd3;
+	width: 60px;
+	color: #2f2e84;
+	cursor:pointer;
+}
+table.cells th.sel {
+	background-color: #ebddd4;
+}
+
+/** fixed rows*/
+table.cells thead th {
+	border: solid 1px #8d8ec5;
+	background-color: #ababd3;
+	text-align: center;
+	padding: 3px 2px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #2f2e84;
+	cursor: pointer;
+}
+
+table.cells tr.labels th.ref {
+	width:60px;
+}
+/** rh and cw */
+table.cells tr.cw td, table.cells tr.cw th {
+	padding:0px 2px;
+	font-size: 1px;
+	overflow: hidden;
+	border-width: 0;
+}
+
+table.cells tr.cw td p, able.cells tr.cw th p {
+	height: 0;
+}
+table.cells tr.cw{
+	height:0;
+}
+/************ chart **********/
+.chart {
+	position:absolute !important;
+	z-index: 100;
+	padding: 20px;
+	background-color: #eee;
+	border: solid 1px #999;
+	cursor: move;
+	margin-left:65px;
+	margin-top:23px;
+}
+.chart .chart-menu {
+	visibility: hidden;
+}
+
+.chart .chart-area {
+	float:left;
+}
+
+/**** readme *****/
+.readme {
+	padding-left: 30px;
+}	
+.readme h1{
+	font-size: 2em;
+	color: #333399;
+	margin: 10px;
+}
+
+.readme h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #333399;
+	border-bottom:solid 1px #333399;
+	margin: 15px 5px 5px 5px;
+	width:100%;
+}
+
+.readme p {
+	margin: 5px 2px;
+	line-height:1.3em;
+}
+
+.readme ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.readme ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+/** modules */
+.modules ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.module {
+	margin:10px;
+	border: solid 1px #ddd;
+	width:370px;
+	height:270px;
+	padding:10px;
+	float:left;
+}
+
+.module img.screenshot {
+	width:150px;
+	height:120px;
+	float:right;
+}
+.module h2 {
+	color: #333399;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.module h2 .vendor{
+	font-size: 0.9em;
+}
+
+.module .price {
+	float:left;
+	color:#FF6633;
+	font-weight: bold;
+}
+
+.module .actions {
+	clear:both;
+	padding:10px 0px 10px 0px;
+}
+.module .actions a {
+	float:right;
+}
+
+.star {
+	padding:0 10px 0 10px;
+	background:url(img/star.png) no-repeat center
+}
+
+.star-empty {
+	padding:0 10px 0 10px;
+	background:url(img/star_empty.png) no-repeat center
+}
+
+/** requests **/
+.request {
+	margin:10px;
+	border: solid 1px #ddd;
+	width:370px;
+	height:270px;
+	padding:10px;
+	float:left;
+}
+
+.request h2 {
+	color: #333399;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.request h2 .vendor{
+	font-size: 0.9em;
+}
+
+.request .price {
+	float:left;
+	color:#FF6633;
+	font-weight: bold;
+}
+
+.request .actions {
+	clear:both;
+	padding:10px 0px 10px 0px;
+}
+.request .actions a {
+	float:right;
+	padding:3px;
+}
+.request h3{
+	font-weight: bold;
+	padding:10px;
+}
+
+.request .bids {
+	width:100%;
+	clear:both;
+	border-collapse: collapse;
+}
+.request .bids td{
+	border-top: solid 1px #ddd;
+}
+
+.request .bids th{
+	background-color: #ccc;
+}

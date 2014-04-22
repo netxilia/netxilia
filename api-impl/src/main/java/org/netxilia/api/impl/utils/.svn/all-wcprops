@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/netxilia/code/!svn/ver/417/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils
+END
+BlockEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/384/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/BlockEvent.java
+END
+ISparseMatrixEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/323/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/ISparseMatrixEntry.java
+END
+OrderedBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/netxilia/code/!svn/ver/323/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/OrderedBlock.java
+END
+DynamicClassLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/323/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/DynamicClassLoader.java
+END
+ISparseMatrixListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/netxilia/code/!svn/ver/384/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/ISparseMatrixListener.java
+END
+OrderedBlockMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/395/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/OrderedBlockMatrix.java
+END
+InsertMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/323/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/InsertMode.java
+END
+BlockMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/326/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/BlockMetadata.java
+END
+ISparseMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/369/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/ISparseMatrix.java
+END

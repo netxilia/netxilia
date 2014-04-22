@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/netxilia/code/!svn/ver/417/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/intervals
+END
+Interval.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/395/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/intervals/Interval.java
+END
+IntervalTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/netxilia/code/!svn/ver/410/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/intervals/IntervalTree.java
+END
+TreeMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/417/trunk/api-impl/src/main/java/org/netxilia/api/impl/utils/intervals/TreeMap.java
+END

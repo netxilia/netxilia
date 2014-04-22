@@ -1,0 +1,16 @@
+Coverage 09-may-2011
+spi-impl: 53%
+api-impl: 45%
+api: 57%
+spi: 100%
+
+Tests todo:
+API IMPL (23 % is only Treemap!)
+- deleteSheet
+- events (120 lines)
+- simulate exceptions in storage
+
+- Charts (144 lines)
+
+SPI IMPL
+- DB (400 lines)

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/schema
+END
+DbTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/schema/DbTable.java
+END
+DbDataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/netxilia/code/!svn/ver/395/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/schema/DbDataType.java
+END
+DbColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/schema/DbColumn.java
+END
+DbSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/schema/DbSchema.java
+END
+DbDataTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/main/java/org/netxilia/spi/impl/storage/db/ddl/schema/DbDataTypeEditor.java
+END

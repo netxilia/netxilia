@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/netxilia/code/!svn/ver/427/trunk/server/src/main/java/org/netxilia/server/rest
+END
+UserResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/417/trunk/server/src/main/java/org/netxilia/server/rest/UserResource.java
+END
+CellResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/417/trunk/server/src/main/java/org/netxilia/server/rest/CellResource.java
+END
+EventResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/rest/EventResource.java
+END
+HomeResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/netxilia/code/!svn/ver/404/trunk/server/src/main/java/org/netxilia/server/rest/HomeResource.java
+END
+AdminResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/376/trunk/server/src/main/java/org/netxilia/server/rest/AdminResource.java
+END
+DataSourceResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/netxilia/code/!svn/ver/369/trunk/server/src/main/java/org/netxilia/server/rest/DataSourceResource.java
+END
+WorkbookResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/380/trunk/server/src/main/java/org/netxilia/server/rest/WorkbookResource.java
+END
+ColumnResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/374/trunk/server/src/main/java/org/netxilia/server/rest/ColumnResource.java
+END
+StyleResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/369/trunk/server/src/main/java/org/netxilia/server/rest/StyleResource.java
+END
+ChartResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/376/trunk/server/src/main/java/org/netxilia/server/rest/ChartResource.java
+END
+FormatterResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/netxilia/code/!svn/ver/426/trunk/server/src/main/java/org/netxilia/server/rest/FormatterResource.java
+END
+AbstractResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/rest/AbstractResource.java
+END
+WindowResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/netxilia/code/!svn/ver/382/trunk/server/src/main/java/org/netxilia/server/rest/WindowResource.java
+END
+RowResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/374/trunk/server/src/main/java/org/netxilia/server/rest/RowResource.java
+END
+SheetResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/netxilia/code/!svn/ver/414/trunk/server/src/main/java/org/netxilia/server/rest/SheetResource.java
+END

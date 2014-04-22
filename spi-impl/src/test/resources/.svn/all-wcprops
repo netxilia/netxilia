@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/netxilia/code/!svn/ver/424/trunk/spi-impl/src/test/resources
+END
+test-db-schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/netxilia/code/!svn/ver/396/trunk/spi-impl/src/test/resources/test-db-schema.xml
+END
+test-formatters.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/netxilia/code/!svn/ver/414/trunk/spi-impl/src/test/resources/test-formatters.xml
+END
+test-domain-services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/netxilia/code/!svn/ver/424/trunk/spi-impl/src/test/resources/test-domain-services.xml
+END

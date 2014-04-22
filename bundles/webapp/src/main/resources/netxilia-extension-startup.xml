@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<context:annotation-config />
+	
+	<!-- import only when demo accepted -->
+	<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheet">
+		<property name="createDemoOnly" value="true"/>
+		<property name="jsonImportService" ref="impJson"/>
+		<property name="excelImportService" ref="impExcel"/>
+		
+		<property name="jsonImports">
+			<list>
+				<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheetInfo">
+					<property name="workbook" value="demo"/>
+					<property name="file" value="styles.json"/>
+				</bean>
+				<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheetInfo">
+					<property name="workbook" value="demo"/>
+					<property name="file" value="formulas.json"/>
+				</bean>
+				<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheetInfo">
+					<property name="workbook" value="demo"/>
+					<property name="file" value="netxilia1.json"/>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<!-- import always -->
+	<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheet">
+		<property name="createDemoOnly" value="false"/>
+		<property name="jsonImportService" ref="impJson"/>
+		<property name="excelImportService" ref="impExcel"/>
+		
+		<property name="excelImports">
+			<list>
+				<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheetInfo">
+					<property name="workbook" value="SYSTEM"/>
+					<property name="file" value="styles.xls"/>
+				</bean>
+			
+				<bean class="org.netxilia.server.service.startup.impl.ImportSpreadsheetInfo">
+					<property name="workbook" value="help"/>
+					<property name="file" value="functions.xls"/>
+				</bean>
+			</list>
+		</property>
+	</bean>
+</beans>

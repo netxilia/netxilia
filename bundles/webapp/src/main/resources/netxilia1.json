@@ -1,0 +1,13 @@
+{"type":"normal","name":"netxilia1","aliases":{},"charts":[],
+"columns":[{"width":120},{"width":164},{"width":310}],
+"rows":[{"cells":[{"content":"NETXILIA special functionalities","styles":"b fs-12"},
+{"styles":"b fs-12"},{"styles":"b fs-12"}]},{"cells":[]},
+{"cells":[{"content":"\u003dSTYLEDECODE(10, \"sourceforge-button\")"},{},
+{"content":"The cell uses a sourceforge style"}]},
+{"cells":[{"content":"\u003dSTYLEINTERVALS(B4, 0, \"negative\", \"positive\")"},{"content":"-2"},
+{"content":"The style of the first column on this row will change depending on the value entered in the second column: negative or positive values"}]},
+{"cells":[{"content":"\u003dDISPLAYINTERVALS(B5, 0, \"negative\", \"positive\")"},
+{"content":"-3"},{"content":"The display of the first column changes with the entered value in the second column"}]},
+{"cells":[{"content":"\u003dDISPLAYDECODE(B6, 10, \"FOUND!\", \"Not found. Try 10\")"},
+{"content":"104"},{"content":"The display of the first column changes with the entered value in the second column"}]},
+{"cells":[{},{"content":"\u003dA6 + 1"},{"content":"The cell in the first column in the previous row keeps its value, only the display changes. Thus it can be used further in formulas"}]}]}

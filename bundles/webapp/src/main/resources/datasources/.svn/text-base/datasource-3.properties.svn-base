@@ -1,0 +1,6 @@
+jdbc.driver=org.h2.Driver
+jdbc.url=jdbc:h2:tcp://localhost/~/netxilia/nx
+
+jdbc.username=teamsheet
+jdbc.password=ts
+jdbc.name=H2 example

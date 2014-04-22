@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/ddl
+END
+MockDDLUtilsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/ddl/MockDDLUtilsFactory.java
+END
+MockDDLWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/ddl/MockDDLWriter.java
+END
+MockDDLUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/ddl/MockDDLUtils.java
+END
+MockDDLReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/netxilia/code/!svn/ver/364/trunk/spi-impl/src/test/java/org/netxilia/spi/impl/storage/ddl/MockDDLReader.java
+END

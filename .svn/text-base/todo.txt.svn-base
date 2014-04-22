@@ -1,0 +1,84 @@
+important todo
+- sum for large data
+- refresh on init sheet to generate propagation
+- limit threads for formula and operations
+- remove all synchronized
+- cache styles to listen to modifs
+
+
+bugs:
+- import of excel sheets with space inside the name
+- $.url everywhere
+- should make sure all the formulas depending on non cacheable cells are calculated before opening the sheet (events are ignored)
+
+later
+1. do not keep ref and index in XXXData
+2. when using existing db schema, to store strings in numeric column -> use props
+3. in db storage use sync only for ID generation
+4. templates are in fact kind of deep keep for linked sheets.
+5. when downloading "module" the incoming sheets may be linked to existent sheets from other modules
+
+import 1000 rows x 100 cols: total 3000ms
+- 100ms POI
+- 600ms convert and create commands
+- 2300ms save data and props (50 data, 30 props, 100 between !?)
+
+SYNCHRONIZED
+feb 2011
+api-impl: 45
+server: 11
+spi-impl: 15
+
+find . -name '*.java' | xargs grep -iL "Copyright" | grep -v target | grep -v "work"
+		
+	
+partially done:	
+	- fixed rows and cols - move selection, fix selection indices
+	
+done:
+	- smart copy & paste	
+	- work with selections: replicate data
+	- mode edit and mode select clear
+	- resize rows & cols
+	- colors
+	- mark differently cells with formula
+	- formulas - use server parser
+	- formatters: numbers, money, dates
+	- insert, delete rows & cols
+	- automatic adding of rows & cells
+	- companion sheet for user's private notes & formulas
+	- summary rows (as labs.adobe.com)
+	- copy & paste
+	- smart filter by filtering by column using the current selection -> use ESC to get back to all
+	- editors	
+	- auto-complete and/or drop list from another column (linked with editor)	
+	- refresh external data at load time - including time generated data ex: now()
+	- manage large data
+	- sort
+	- undo & redo
+	- charts?
+	- merge ?
+ - don't send position if no other client present (check if others look the same spreadsheet once a minute)
+
+--------------------------------------------------	
+version 1.1:
+	- cell restrictions/validations -> see google
+	- refer external sheet
+	- filters using google finance-like histograms
+
+----------------------------------------------------
+optmization client server:
+ - for JSON use automatic compression for field name: split names and use enough letters to make the difference:
+ 	startColumn -> sc, startRow -> sr, etc 
+
+----------------------------------------------------
+ 
+REST - autoregistration
+Use GetRestful to find out a class is resource.
+ResourceMethodRegistry
+
+
+----------------------------------------------------
+un mic feature request aici ar fi ca atunci cand dai enter sa te duci in stanga atatea coloane cate taburi ai dat inainte
+in felul asta ai putea completa toate coloanele cu tab si cand dai enter, te duci la "inceput" de rand
+

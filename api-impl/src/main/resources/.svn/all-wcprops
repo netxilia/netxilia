@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/netxilia/code/!svn/ver/427/trunk/api-impl/src/main/resources
+END
+styles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/netxilia/code/!svn/ver/371/trunk/api-impl/src/main/resources/styles.xml
+END
+formatters.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/netxilia/code/!svn/ver/427/trunk/api-impl/src/main/resources/formatters.xml
+END
+domain-services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/netxilia/code/!svn/ver/419/trunk/api-impl/src/main/resources/domain-services.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/netxilia/code/!svn/ver/322/trunk/api-impl/src/main/resources/log4j.properties
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/netxilia/code/!svn/ver/380/trunk/api-impl/src/main/resources/ehcache.xml
+END

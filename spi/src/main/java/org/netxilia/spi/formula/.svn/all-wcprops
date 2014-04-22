@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/netxilia/code/!svn/ver/419/trunk/spi/src/main/java/org/netxilia/spi/formula
+END
+IFormulaParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/netxilia/code/!svn/ver/419/trunk/spi/src/main/java/org/netxilia/spi/formula/IFormulaParser.java
+END
+SkipFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/netxilia/code/!svn/ver/363/trunk/spi/src/main/java/org/netxilia/spi/formula/SkipFunction.java
+END
+IFormulaCalculatorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/netxilia/code/!svn/ver/384/trunk/spi/src/main/java/org/netxilia/spi/formula/IFormulaCalculatorFactory.java
+END
+Function.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/netxilia/code/!svn/ver/363/trunk/spi/src/main/java/org/netxilia/spi/formula/Function.java
+END
+Functions.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/netxilia/code/!svn/ver/363/trunk/spi/src/main/java/org/netxilia/spi/formula/Functions.java
+END
+IFormulaCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/netxilia/code/!svn/ver/384/trunk/spi/src/main/java/org/netxilia/spi/formula/IFormulaCalculator.java
+END
